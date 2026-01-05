@@ -610,11 +610,11 @@
                  <span class="text-yellow-500">NUESTROS SERVICIOS</span>
             </h2>
             <p class="text-xl text-gray-400">
-                Elige el plan que mejor se adapte a tus necesidades
+                Elige el servicio que mejor se adapte a tus necesidades
             </p>
         </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Modelo Gratuito -->
+                <!-- Oportunidad artistas emergentes -->
                 <div class="model-yellow-card bg-black rounded-3xl p-8 border-2 border-yellow-600/30">
                     <div class="text-center mb-8">
                         <div class="inline-flex items-center justify-center w-20 h-20 bg-yellow-500/20 rounded-2xl mb-4 border border-yellow-500/30">
@@ -628,7 +628,7 @@
                     <div class="space-y-4 mb-8">
                         <div class="flex items-start">
                             <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
-                            <span class="text-gray-300">Todos los servicios de producció musical y visualn</span>
+                            <span class="text-gray-300">Todos los servicios de producció musical y visual</span>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
@@ -643,7 +643,7 @@
                     <div class="bg-yellow-500/10 rounded-xl p-4 mb-8 border border-yellow-500/20">
                         <h4 class="font-bold text-yellow-400 mb-2">CONDICIÓN PRINCIPAL</h4>
                         <p class="text-yellow-300 text-sm">
-                            Kurtus Inc retiene el 100% de los derechos de autor
+                            Tener una propuesta
                         </p>
                     </div>
                     
@@ -700,7 +700,7 @@
                     </a>
                 </div>
 
-                <!-- Modelo Empresas -->
+                <!-- A gran escala -->
                 <div class="model-yellow-card bg-black rounded-3xl p-8 border-2 border-gray-700">
                     <div class="text-center mb-8">
                         <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-2xl mb-4 border border-gray-700">
