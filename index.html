@@ -1,11 +1,11 @@
-lo quiero en movil tambien esto <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
     <!-- SEO para Productora Musical -->
-    <title>Kurtus Inc | Productores l & Distribución</title>
+    <title>Kurtus Inc | Productores & Distribución</title>
     <meta name="description" content="Kurtus Inc - Productora musical profesional. Grabación, mezcla, mastering, producción audiovisual y distribución global.">
     <meta name="author" content="Kurtus Inc">
     <meta http-equiv="Content-Language" content="es">
@@ -34,7 +34,293 @@ lo quiero en movil tambien esto <!DOCTYPE html>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ESTILOS MÍNIMOS PARA MÓVIL - NO CAMBIAN EL DISEÑO */
+        @media (max-width: 768px) {
+            /* CONTAINER Y ESPACIOS */
+            .container {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+            
+            /* HEADER Y NAVEGACIÓN */
+            header nav {
+                padding-top: 1rem !important;
+                padding-bottom: 1rem !important;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.5rem !important;
+            }
+            
+            /* MENÚ CENTRADO EN MÓVIL */
+            .nav-container {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+            
+            .nav-link-yellow {
+                padding: 0.5rem 1rem !important;
+                font-size: 0.9rem !important;
+            }
+            
+            /* HERO SECTION CENTRADA */
+            #inicio .grid {
+                display: flex !important;
+                flex-direction: column-reverse !important;
+                gap: 2rem !important;
+            }
+            
+            #inicio h2 {
+                font-size: 2rem !important;
+                text-align: center !important;
+                line-height: 1.2 !important;
+            }
+            
+            #inicio p {
+                text-align: center !important;
+                font-size: 1rem !important;
+            }
+            
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+            
+            .btn-yellow, .btn-yellow-outline {
+                width: 100% !important;
+                max-width: 300px;
+                text-align: center;
+                padding: 1rem !important;
+            }
+            
+            /* ESTADÍSTICAS CENTRADAS */
+            .stats-grid {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1rem !important;
+                margin-top: 2rem;
+            }
+            
+            /* TÍTULOS CENTRADOS */
+            .section-title {
+                text-align: center !important;
+            }
+            
+            .section-title h2 {
+                font-size: 1.75rem !important;
+            }
+            
+            /* SERVICIOS EN MÓVIL - 1 COLUMNA */
+            .services-grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+            
+            .service-card {
+                width: 100% !important;
+            }
+            
+            /* PROYECTOS EN MÓVIL - 1 COLUMNA */
+            #proyectos .grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+            
+            .project-card {
+                width: 100% !important;
+            }
+            
+            /* COLABORADORES CENTRADOS */
+            #colaboradores .grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+            
+            .collaborator-card {
+                width: 100% !important;
+                text-align: center !important;
+            }
+            
+            /* MODELOS CENTRADOS */
+            #modelos .grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 1.5rem !important;
+            }
+            
+            .model-card {
+                width: 100% !important;
+            }
+            
+            /* DISTRIBUCIÓN CENTRADA */
+            #distribucion .grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 1rem !important;
+            }
+            
+            .platform-card {
+                text-align: center;
+            }
+            
+            /* CLIENTES CENTRADOS */
+            #clientes .grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 1rem !important;
+            }
+            
+            .client-card {
+                text-align: center;
+            }
+            
+            /* FORMULARIO OPTIMIZADO */
+            form {
+                padding: 1.5rem !important;
+            }
+            
+            .form-grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 1rem !important;
+            }
+            
+            /* FOOTER CENTRADO */
+            footer .grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 2rem !important;
+                text-align: center !important;
+            }
+            
+            .social-icons {
+                justify-content: center !important;
+            }
+            
+            /* BOTONES FLOTANTES */
+            #collaborate-btn {
+                left: 1rem !important;
+                right: 1rem !important;
+                transform: none !important;
+                text-align: center;
+                font-size: 0.9rem;
+                padding: 0.75rem !important;
+            }
+            
+            /* WHATSAPP BUTTON */
+            .whatsapp-container {
+                right: 1rem !important;
+                bottom: 5rem !important;
+            }
+            
+            /* FAQ ASSISTANT - OCULTAR EN MÓVIL */
+            #faq-assistant {
+                display: none !important;
+            }
+        }
+        
+        /* ESTILOS EXISTENTES QUE DEBEN MANTENERSE */
+        .nav-link-yellow {
+            color: #fff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .nav-link-yellow:hover, .nav-link-yellow.active {
+            color: #fbbf24;
+            background-color: rgba(251, 191, 36, 0.1);
+        }
+        
+        .btn-yellow {
+            background: linear-gradient(to right, #f59e0b, #d97706);
+            color: #000;
+            font-weight: 800;
+            border-radius: 0.75rem;
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-yellow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+        }
+        
+        .btn-yellow-outline {
+            border: 2px solid #f59e0b;
+            color: #f59e0b;
+            background: transparent;
+            font-weight: 800;
+            border-radius: 0.75rem;
+            padding: 1rem 2rem;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-yellow-outline:hover {
+            background: rgba(245, 158, 11, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        /* CENTRAR ELEMENTOS QUE NO LO ESTABAN */
+        .text-center-mobile {
+            text-align: center;
+        }
+        
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* MEJORAR TAMAÑOS DE TEXTO EN MÓVIL */
+        @media (max-width: 768px) {
+            p, li, span:not(.icon) {
+                font-size: 0.95rem !important;
+            }
+            
+            h3 {
+                font-size: 1.25rem !important;
+            }
+            
+            h4 {
+                font-size: 1.1rem !important;
+            }
+        }
+        
+        /* BOTONES TÁCTILES PARA MÓVIL */
+        @media (max-width: 768px) {
+            button, 
+            .btn-yellow, 
+            .btn-yellow-outline,
+            a[href*="#"],
+            .nav-link-yellow {
+                min-height: 44px;
+                min-width: 44px;
+            }
+            
+            input, textarea, select {
+                font-size: 16px !important; /* Evita zoom en iOS */
+            }
+        }
+    </style>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo-kurtus-yellow.png">
@@ -63,11 +349,11 @@ lo quiero en movil tambien esto <!DOCTYPE html>
         <nav class="container mx-auto px-4 py-6">
             <div class="flex flex-col lg:flex-row items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center gap-4 mb-6 lg:mb-0">
+                <div class="flex items-center gap-4 mb-6 lg:mb-0 center-content">
                     <div class="logo-yellow w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center">
                         <i class="fas fa-compact-disc text-black text-2xl font-bold"></i>
                     </div>
-                    <div class="logo-text">
+                    <div class="logo-text text-center-mobile">
                         <h1 class="text-3xl md:text-4xl font-black">
                             <span class="text-white">KURTUS</span> 
                             <span class="text-yellow-500">INC</span>
@@ -75,16 +361,14 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         <p class="text-sm text-yellow-400 font-semibold tracking-widest">PRODUCTORA MUSICAL</p>
                     </div>
                 </div>
-<!-- Cámbialo por esto (añadiendo la línea nueva): -->
-<div class="flex flex-wrap justify-center gap-2 lg:gap-6">
-    <a href="#inicio" class="nav-link-yellow active">INICIO</a>
-    <a href="#servicios" class="nav-link-yellow">SERVICIOS</a>
-    <a href="#colaboradores" class="nav-link-yellow">COLABORADORES</a>
-    <a href="#distribucion" class="nav-link-yellow">DISTRIBUCIÓN</a>
-    <!-- LÍNEA NUEVA QUE AÑADES -->
-    <a href="colaborar.html" class="nav-link-yellow">¿BUSCAS TRABAJAR?</a>
-
-</div>
+                
+                <!-- Menú de navegación -->
+                <div class="nav-container">
+                    <a href="#inicio" class="nav-link-yellow active">INICIO</a>
+                    <a href="#servicios" class="nav-link-yellow">SERVICIOS</a>
+                    <a href="#colaboradores" class="nav-link-yellow">COLABORADORES</a>
+                    <a href="#distribucion" class="nav-link-yellow">DISTRIBUCIÓN</a>
+                    <a href="colaborar.html" class="nav-link-yellow">¿BUSCAS TRABAJAR?</a>
                 </div>
             </div>
         </nav>
@@ -93,7 +377,7 @@ lo quiero en movil tambien esto <!DOCTYPE html>
         <div id="inicio" class="container mx-auto px-4 py-16 lg:py-24">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Texto Hero -->
-                <div>
+                <div class="center-content text-center-mobile">
                     <div class="inline-flex items-center gap-2 bg-yellow-500/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-yellow-500/30">
                         <span class="h-2 w-2 bg-yellow-400 rounded-full animate-pulse"></span>
                         <span class="text-sm font-semibold text-yellow-400">CAMPAÑA</span>
@@ -105,13 +389,11 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         DE <span class="text-yellow-400">ALTA GAMA</span>
                     </h2>
                     
-                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-                        Servicios de producción musical para artistas y
-                        empresas 
-                        
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed text-center-mobile">
+                        Servicios de producción musical para artistas y empresas
                     </p>
                     
-                    <div class="flex flex-wrap gap-4">
+                    <div class="hero-buttons">
                         <a href="#contacto" class="btn-yellow px-8 py-4 rounded-xl font-bold text-lg">
                             <i class="fas fa-calendar-check mr-2"></i>SOLICITAR PRESUPUESTO
                         </a>
@@ -122,8 +404,8 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                 </div>
 
                 <!-- Estadísticas -->
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                <div class="stats-grid grid grid-cols-2 gap-4">
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20 text-center center-content">
                         <div class="text-yellow-500 text-3xl mb-4">
                             <i class="fas fa-microphone"></i>
                         </div>
@@ -131,7 +413,7 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         <p class="text-yellow-300 text-sm">Estudio profesional</p>
                     </div>
                     
-                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20 text-center center-content">
                         <div class="text-yellow-500 text-3xl mb-4">
                             <i class="fas fa-sliders-h"></i>
                         </div>
@@ -139,7 +421,7 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         <p class="text-yellow-300 text-sm">Ingenieros</p>
                     </div>
                     
-                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20 text-center center-content">
                         <div class="text-yellow-500 text-3xl mb-4">
                             <i class="fas fa-wave-square"></i>
                         </div>
@@ -147,7 +429,7 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         <p class="text-yellow-300 text-sm">Calidad internacional</p>
                     </div>
                     
-                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20 text-center center-content">
                         <div class="text-yellow-500 text-3xl mb-4">
                             <i class="fas fa-film"></i>
                         </div>
@@ -159,463 +441,462 @@ lo quiero en movil tambien esto <!DOCTYPE html>
         </div>
     </header>
 
-  <!-- Sección Servicios -->
-<section id="servicios" class="py-20 bg-gray-900">
-    <div class="container mx-auto px-4">
-        <div class="text-center max-w-4xl mx-auto mb-16">
-            <h2 class="text-4xl md:text-5xl font-black mb-6">
-                SERVICIOS <span class="text-yellow-500">PROFESIONALES</span>
-            </h2>
-            <p class="text-xl text-gray-400 mb-8">
-                Soluciones completas para todas las etapas de producción musical y audiovisual
-            </p>
-        </div>
-
-        <!-- Grid de Servicios -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            <!-- Servicio 1 - GRABACIÓN -->
-            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
-                <div class="text-yellow-500 text-4xl mb-6">
-                    <i class="fas fa-microphone-alt"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-white">GRABACIÓN PROFESIONAL</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    Estudios acústicamente tratados con equipamiento de primera línea
+    <!-- Sección Servicios -->
+    <section id="servicios" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-4xl mx-auto mb-16 section-title">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    SERVICIOS <span class="text-yellow-500">PROFESIONALES</span>
+                </h2>
+                <p class="text-xl text-gray-400 mb-8 text-center-mobile">
+                    Soluciones completas para todas las etapas de producción musical y audiovisual
                 </p>
-                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Micrófono SE2200a II para captura vocal premium</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Monitores Yamaha HS5 con referencia plana</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Interface Apollo Solo con procesamiento UAD</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Acompañamiento técnico durante toda la sesión</span>
-                    </li>
-                </ul>
-                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
-                    <i class="fas fa-headphones mr-2"></i>Soporte técnico incluido
-                </div>
             </div>
 
-            <!-- Servicio 2 - EDICIÓN & MEZCLA -->
-            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
-                <div class="text-yellow-500 text-4xl mb-6">
-                    <i class="fas fa-sliders-h"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-white">EDICIÓN & MEZCLA</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    Transformamos tus grabaciones en productos listos para plataformas
-                </p>
-                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Edición vocal precisa: timing, afinación, limpieza</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Mezcla profesional con balance y espacio</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Hasta 3 revisiones incluidas en el proceso</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Acompañamiento creativo en cada paso</span>
-                    </li>
-                </ul>
-                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
-                    <i class="fas fa-sync-alt mr-2"></i>Revisiones sin coste adicional
-                </div>
-            </div>
-
-            <!-- Servicio 3 - MASTERING -->
-            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
-                <div class="text-yellow-500 text-4xl mb-6">
-                    <i class="fas fa-wave-square"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-white">MASTERING</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    El toque final que hace que tu música suene en todas partes
-                </p>
-                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Mastering analógico y digital combinado</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Certificación LUFS para niveles óptimos</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Entrega en todos los formatos digitales</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Explicación detallada de cada proceso</span>
-                    </li>
-                </ul>
-                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
-                    <i class="fas fa-volume-up mr-2"></i>Ajustes finales incluidos
-                </div>
-            </div>
-
-            <!-- Servicio 4 - AUDIOVISUAL -->
-            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
-                <div class="text-yellow-500 text-4xl mb-6">
-                    <i class="fas fa-film"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-white">PRODUCCIÓN AUDIOVISUAL</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                    Videoclips profesionales que cuentan historias y elevan tu música
-                </p>
-                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Cámara Lumix S5 II en cine 6K Full Frame</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Lente 50mm f/1.8 para profundidad cinematográfica</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Color Grading profesional con estilo único</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                        <span>Desarrollo de narrativa visual personalizada</span>
-                    </li>
-                </ul>
-                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
-                    <i class="fas fa-video mr-2"></i>Entrega en múltiples formatos
-                </div>
-            </div>
-        </div>
-
-        <!-- Sección de Compromiso y Garantías -->
-        <div class="mt-16 pt-12 border-t border-gray-800">
-            <div class="grid lg:grid-cols-3 gap-8">
+            <!-- Grid de Servicios -->
+            <div class="services-grid md:grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
-                <!-- Acompañamiento -->
-                <div class="bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 p-8 rounded-2xl border border-yellow-500/20 h-full">
-                    <h3 class="text-2xl font-bold mb-4 text-white">
-                        <i class="fas fa-hands-helping text-yellow-500 mr-3"></i>
-                        TE GUIAMOS PASO A PASO
-                    </h3>
-                    <p class="text-gray-300 mb-4">
-                        Nosotros también empezamos sin saber nada. Entendemos esa sensación de incertidumbre. Por eso te acompañamos en cada etapa.
+                <!-- Servicio 1 - GRABACIÓN -->
+                <div class="service-card bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col center-content">
+                    <div class="text-yellow-500 text-4xl mb-6">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white text-center-mobile">GRABACIÓN PROFESIONAL</h3>
+                    <p class="text-gray-400 text-sm mb-4 text-center-mobile">
+                        Estudios acústicamente tratados con equipamiento de primera línea
                     </p>
-                    <ul class="space-y-3 text-gray-300">
+                    <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
                         <li class="flex items-start">
-                            <i class="fas fa-lightbulb text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Transformamos tu idea en algo tangible</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Micrófono SE2200a II para captura vocal premium</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-comments text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Comunicación constante durante todo el proceso</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Monitores Yamaha HS5 con referencia plana</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-brain text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Hacemos realidad lo que imaginas</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Interface Apollo Solo con procesamiento UAD</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-graduation-cap text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Te enseñamos y explicamos cada decisión</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Acompañamiento técnico durante toda la sesión</span>
                         </li>
                     </ul>
+                    <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800 text-center-mobile">
+                        <i class="fas fa-headphones mr-2"></i>Soporte técnico incluido
+                    </div>
                 </div>
-                
-                <!-- Postventa -->
-                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 h-full">
-                    <h3 class="text-2xl font-bold mb-4 text-white">
-                        <i class="fas fa-shield-alt text-yellow-500 mr-3"></i>
-                        POSTVENTA GARANTIZADA
-                    </h3>
-                    <p class="text-gray-300 mb-4">
-                        Nuestro compromiso no termina con la entrega. Tu satisfacción es nuestra prioridad.
+
+                <!-- Servicio 2 - EDICIÓN & MEZCLA -->
+                <div class="service-card bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col center-content">
+                    <div class="text-yellow-500 text-4xl mb-6">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white text-center-mobile">EDICIÓN & MEZCLA</h3>
+                    <p class="text-gray-400 text-sm mb-4 text-center-mobile">
+                        Transformamos tus grabaciones en productos listos para plataformas
                     </p>
-                    <ul class="space-y-3 text-gray-300">
+                    <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
                         <li class="flex items-start">
-                            <i class="fas fa-redo text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>Revisiones semanalmente</strong></span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Edición vocal precisa: timing, afinación, limpieza</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-sync text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>Rehacemos todo gratuitamente</strong> si no estás satisfecho</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Mezcla profesional con balance y espacio</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-cloud-upload-alt text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>Soporte técnico</strong> para distribución en plataformas</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Hasta 3 revisiones incluidas en el proceso</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-database text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>Backup permanente</strong> de todos tus archivos</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Acompañamiento creativo en cada paso</span>
                         </li>
                     </ul>
+                    <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800 text-center-mobile">
+                        <i class="fas fa-sync-alt mr-2"></i>Revisiones sin coste adicional
+                    </div>
                 </div>
-                
-                <!-- Cancelaciones y Garantías -->
-                <div class="bg-gradient-to-br from-red-500/10 to-red-600/5 p-8 rounded-2xl border border-red-500/20 h-full">
-                    <h3 class="text-2xl font-bold mb-4 text-white">
-                        <i class="fas fa-hand-holding-usd text-red-500 mr-3"></i>
-                        GARANTÍA DE SATISFACCIÓN
-                    </h3>
-                    <p class="text-gray-300 mb-4">
-                        Trabajamos con total transparencia. Tu confianza es lo más importante.
+
+                <!-- Servicio 3 - MASTERING -->
+                <div class="service-card bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col center-content">
+                    <div class="text-yellow-500 text-4xl mb-6">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white text-center-mobile">MASTERING</h3>
+                    <p class="text-gray-400 text-sm mb-4 text-center-mobile">
+                        El toque final que hace que tu música suene en todas partes
                     </p>
-                    <ul class="space-y-3 text-gray-300">
+                    <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
                         <li class="flex items-start">
-                            <i class="fas fa-money-bill-wave text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>100% de devolución</strong> en cancelaciones</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Mastering analógico y digital combinado</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-clock text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>Cancelación gratuita</strong> en cualquier momento</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Certificación LUFS para niveles óptimos</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-heart text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>Satisfacción garantizada</strong> o te devolvemos el dinero</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Entrega en todos los formatos digitales</span>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-lock text-green-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span><strong>Transparencia total</strong> en costes y procesos</span>
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Explicación detallada de cada proceso</span>
                         </li>
                     </ul>
+                    <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800 text-center-mobile">
+                        <i class="fas fa-volume-up mr-2"></i>Ajustes finales incluidos
+                    </div>
+                </div>
+
+                <!-- Servicio 4 - AUDIOVISUAL -->
+                <div class="service-card bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col center-content">
+                    <div class="text-yellow-500 text-4xl mb-6">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white text-center-mobile">PRODUCCIÓN AUDIOVISUAL</h3>
+                    <p class="text-gray-400 text-sm mb-4 text-center-mobile">
+                        Videoclips profesionales que cuentan historias y elevan tu música
+                    </p>
+                    <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Cámara Lumix S5 II en cine 6K Full Frame</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Lente 50mm f/1.8 para profundidad cinematográfica</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Color Grading profesional con estilo único</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Desarrollo de narrativa visual personalizada</span>
+                        </li>
+                    </ul>
+                    <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800 text-center-mobile">
+                        <i class="fas fa-video mr-2"></i>Entrega en múltiples formatos
+                    </div>
                 </div>
             </div>
+
+            <!-- Sección de Compromiso y Garantías -->
+            <div class="mt-16 pt-12 border-t border-gray-800">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    
+                    <!-- Acompañamiento -->
+                    <div class="bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 p-8 rounded-2xl border border-yellow-500/20 h-full">
+                        <h3 class="text-2xl font-bold mb-4 text-white text-center-mobile">
+                            <i class="fas fa-hands-helping text-yellow-500 mr-3"></i>
+                            TE GUIAMOS PASO A PASO
+                        </h3>
+                        <p class="text-gray-300 mb-4 text-center-mobile">
+                            Nosotros también empezamos sin saber nada. Entendemos esa sensación de incertidumbre. Por eso te acompañamos en cada etapa.
+                        </p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Transformamos tu idea en algo tangible</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-comments text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Comunicación constante durante todo el proceso</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-brain text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Hacemos realidad lo que imaginas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-graduation-cap text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span>Te enseñamos y explicamos cada decisión</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Postventa -->
+                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 h-full">
+                        <h3 class="text-2xl font-bold mb-4 text-white text-center-mobile">
+                            <i class="fas fa-shield-alt text-yellow-500 mr-3"></i>
+                            POSTVENTA GARANTIZADA
+                        </h3>
+                        <p class="text-gray-300 mb-4 text-center-mobile">
+                            Nuestro compromiso no termina con la entrega. Tu satisfacción es nuestra prioridad.
+                        </p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-redo text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>Revisiones semanalmente</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-sync text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>Rehacemos todo gratuitamente</strong> si no estás satisfecho</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-cloud-upload-alt text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>Soporte técnico</strong> para distribución en plataformas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-database text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>Backup permanente</strong> de todos tus archivos</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Cancelaciones y Garantías -->
+                    <div class="bg-gradient-to-br from-red-500/10 to-red-600/5 p-8 rounded-2xl border border-red-500/20 h-full">
+                        <h3 class="text-2xl font-bold mb-4 text-white text-center-mobile">
+                            <i class="fas fa-hand-holding-usd text-red-500 mr-3"></i>
+                            GARANTÍA DE SATISFACCIÓN
+                        </h3>
+                        <p class="text-gray-300 mb-4 text-center-mobile">
+                            Trabajamos con total transparencia. Tu confianza es lo más importante.
+                        </p>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-money-bill-wave text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>100% de devolución</strong> en cancelaciones</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-clock text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>Cancelación gratuita</strong> en cualquier momento</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-heart text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>Satisfacción garantizada</strong> o te devolvemos el dinero</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lock text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                                <span><strong>Transparencia total</strong> en costes y procesos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Mensaje Final -->
+                <div class="mt-8 text-center">
+                    <p class="text-gray-300 text-lg italic text-center-mobile">
+                        "Empezamos donde tú estás ahora. Te entendemos, te guiamos y hacemos realidad tu visión."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos Realizados -->
+    <section id="proyectos" class="py-20 bg-black">
+        <div class="container mx-auto px-4 max-w-7xl">
             
-            <!-- Mensaje Final -->
-            <div class="mt-8 text-center">
-                <p class="text-gray-300 text-lg italic">
-                    "Empezamos donde tú estás ahora. Te entendemos, te guiamos y hacemos realidad tu visión."
+            <!-- Encabezado -->
+            <div class="text-center max-w-3xl mx-auto mb-16 section-title">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    <span class="text-yellow-500">PROYECTOS</span> REALIZADOS
+                </h2>
+                <p class="text-xl text-gray-400 text-center-mobile">
+                    Próximamente: muestra de nuestro trabajo en producción musical y videoclips
+                </p>
+            </div>
+
+            <!-- Grid de proyectos -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Proyecto 1 - Placeholder -->
+                <div class="project-card group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[300px] md:min-h-[400px] center-content">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-video text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Proyecto en Desarrollo</h3>
+                        <p class="text-gray-400 mb-6 text-center-mobile">
+                            Próximamente: videoclip profesional
+                        </p>
+                        <div class="text-xs text-gray-500 mb-4">Disponible pronto</div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 - Placeholder -->
+                <div class="project-card group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[300px] md:min-h-[400px] center-content">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-music text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Producción Musical</h3>
+                        <p class="text-gray-400 mb-6 text-center-mobile">
+                            Próximamente: grabación y mezcla
+                        </p>
+                        <div class="text-xs text-gray-500 mb-4"></div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 - Placeholder -->
+                <div class="project-card group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[300px] md:min-h-[400px] center-content">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-microphone text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Sesión de Estudio</h3>
+                        <p class="text-gray-400 mb-6 text-center-mobile">
+                            Próximamente: grabación en vivo
+                        </p>
+                        <div class="text-xs text-gray-500 mb-4"></div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 - Placeholder -->
+                <div class="project-card group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[300px] md:min-h-[400px] center-content">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-sliders-h text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Mezcla y Master</h3>
+                        <p class="text-gray-400 mb-6 text-center-mobile">
+                            Próximamente: proceso completo
+                        </p>
+                        <div class="text-xs text-gray-500 mb-4"></div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 - Placeholder -->
+                <div class="project-card group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[300px] md:min-h-[400px] center-content">
+                    <div class="p-8 text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-headphones text-yellow-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Sesión Acústica</h3>
+                        <p class="text-gray-400 mb-6 text-center-mobile">
+                            Próximamente: grabación íntima
+                        </p>
+                        <div class="text-xs text-gray-500 mb-4"></div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 - Llamada a la acción -->
+                <div class="project-card group relative overflow-hidden rounded-2xl border-2 border-yellow-500/50 hover:border-yellow-500 transition-all duration-500 flex items-center justify-center min-h-[300px] md:min-h-[400px] bg-gradient-to-br from-yellow-500/5 to-yellow-600/10 center-content">
+                    <div class="p-8 text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                            <i class="fas fa-plus text-white text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Tu Proyecto Aquí</h3>
+                        <p class="text-gray-300 mb-6 text-base max-w-xs mx-auto text-center-mobile">
+                            Sé el primero en mostrar tu trabajo con nosotros
+                        </p>
+                        <a href="#contacto" 
+                           class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-6 py-3 rounded-lg text-base transition-all duration-300 transform hover:scale-105 shadow-lg center-content">
+                            <i class="fas fa-paper-plane"></i>
+                            ¡Contáctanos!
+                        </a>
+                        <div class="mt-4 text-xs text-yellow-400 font-medium text-center-mobile">
+                            <i class="fas fa-bolt mr-1"></i>
+                            Pronto en YouTube
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nota informativa -->
+            <div class="text-center mt-12 pt-8 border-t border-gray-800">
+                <p class="text-gray-400 text-sm text-center-mobile">
+                    <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
+                    Estamos trabajando en nuevos proyectos. Esta sección se actualizará próximamente con contenido real.
                 </p>
             </div>
         </div>
-    </div>
-</section>
-<!-- Sección Proyectos Realizados -->
-<section id="proyectos" class="py-20 bg-black">
-    <div class="container mx-auto px-4 max-w-7xl">
-        
-        <!-- Encabezado -->
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-4xl md:text-5xl font-black mb-6">
-                <span class="text-yellow-500">PROYECTOS</span> REALIZADOS
-            </h2>
-            <p class="text-xl text-gray-400">
-                Próximamente: muestra de nuestro trabajo en producción musical y videoclips
-            </p>
-        </div>
+    </section>
 
-        <!-- Grid de proyectos - TODOS iguales, placeholder -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Sección COLABORADORES -->
+    <section id="colaboradores" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 section-title">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    NUESTROS <span class="text-yellow-500">COLABORADORES</span>
+                </h2>
+                <p class="text-xl text-gray-400 text-center-mobile">
+                    El equipo profesional que hace posible la excelencia en cada proyecto
+                </p>
+            </div>
+
+            <!-- Grid de colaboradores -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Colaborador 1 -->
+                <a href="https://instagram.com/incrife" 
+                   target="_blank"
+                   class="collaborator-card bg-gray-900 rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 hover:scale-[1.02] block">
+                    
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 rounded-full flex items-center justify-center mb-6 border-2 border-yellow-500/30 overflow-hidden">
+                            <img src="./SaveClip.App_575556125_18074872850235869_5803504733093357044_n.jpg"
+                                 alt="INCRIFE - CEO de Kurtus Inc"
+                                 width="300"
+                                 height="300"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-2 text-white">INCRIFE</h3>
+                        <p class="text-yellow-400 font-semibold mb-4">CEO</p>
+                        <p class="text-gray-300 mb-6 text-center-mobile">
+                            Una persona donde busca dar oportunidad a las personas
+                        </p>
+                        
+                        <div class="flex gap-3 mt-6 justify-center">
+                            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Productor</span>
+                            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Filmaker</span>
+                            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Ejecutivo</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Colaborador 2 -->
+                <a href="https://www.instagram.com/rafa930_oficial/" 
+                   target="_blank"
+                   class="collaborator-card bg-gray-900 rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 hover:scale-[1.02] block">
+                    
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 rounded-full flex items-center justify-center mb-6 border-2 border-yellow-500/30 overflow-hidden">
+                            <img src="./channels4_profile (4).jpg"
+                                 alt="Rafa 930 - CEO de Kurtus Inc"
+                                 width="300"
+                                 height="300"
+                                 class="w-full h-full object-cover">
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold mb-2 text-white">Rafa 930</h3>
+                        <p class="text-yellow-400 font-semibold mb-4">CEO</p>
+                        <p class="text-gray-300 mb-6 text-center-mobile">
+                            Una persona donde busca dar oportunidad a las personas
+                        </p>
+                        
+                        <div class="flex gap-3 mt-6 justify-center">
+                            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Productor</span>
+                            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Organizador</span>
+                            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Ejecutivo</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Modelos/Servicios -->
+    <section id="modelos" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 section-title">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    <span class="text-yellow-500">NUESTROS SERVICIOS</span>
+                </h2>
+                <p class="text-xl text-gray-400 text-center-mobile">
+                    Elige el plan que mejor se adapte a tus necesidades
+                </p>
+            </div>
             
-            <!-- Proyecto 1 - Placeholder -->
-            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
-                <div class="p-8 text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-video text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Proyecto en Desarrollo</h3>
-                    <p class="text-gray-400 mb-6">
-                        Próximamente: videoclip profesional
-                    </p>
-                    <div class="text-xs text-gray-500 mb-4">Disponible pronto</div>
-                </div>
-            </div>
-
-            <!-- Proyecto 2 - Placeholder -->
-            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
-                <div class="p-8 text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-music text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Producción Musical</h3>
-                    <p class="text-gray-400 mb-6">
-                        Próximamente: grabación y mezcla
-                    </p>
-                    <div class="text-xs text-gray-500 mb-4"></div>
-                </div>
-            </div>
-
-            <!-- Proyecto 3 - Placeholder -->
-            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
-                <div class="p-8 text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-microphone text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Sesión de Estudio</h3>
-                    <p class="text-gray-400 mb-6">
-                        Próximamente: grabación en vivo
-                    </p>
-                    <div class="text-xs text-gray-500 mb-4"></div>
-                </div>
-            </div>
-
-            <!-- Proyecto 4 - Placeholder -->
-            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
-                <div class="p-8 text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-sliders-h text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Mezcla y Master</h3>
-                    <p class="text-gray-400 mb-6">
-                        Próximamente: proceso completo
-                    </p>
-                    <div class="text-xs text-gray-500 mb-4"></div>
-                </div>
-            </div>
-
-            <!-- Proyecto 5 - Placeholder -->
-            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
-                <div class="p-8 text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-headphones text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4 text-white">Sesión Acústica</h3>
-                    <p class="text-gray-400 mb-6">
-                        Próximamente: grabación íntima
-                    </p>
-                    <div class="text-xs text-gray-500 mb-4"></div>
-                </div>
-            </div>
-
-           <!-- Proyecto 6 - Llamada a la acción (MODIFICADO) -->
-<div class="group relative overflow-hidden rounded-2xl border-2 border-yellow-500/50 hover:border-yellow-500 transition-all duration-500 flex items-center justify-center min-h-[400px] bg-gradient-to-br from-yellow-500/5 to-yellow-600/10">
-    <div class="p-8 text-center">
-        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-            <i class="fas fa-plus text-white text-xl"></i> <!-- Más pequeño -->
-        </div>
-        <h3 class="text-2xl font-bold mb-4 text-white">Tu Proyecto Aquí</h3>
-        <p class="text-gray-300 mb-6 text-base max-w-xs mx-auto"> <!-- Texto más pequeño -->
-            Sé el primero en mostrar tu trabajo con nosotros
-        </p>
-        <a href="#contacto" 
-           class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-6 py-3 rounded-lg text-base transition-all duration-300 transform hover:scale-105 shadow-lg"> <!-- Botón más pequeño -->
-            <i class="fas fa-paper-plane"></i>
-            ¡Contáctanos!
-        </a>
-        <div class="mt-4 text-xs text-yellow-400 font-medium"> <!-- Texto más pequeño -->
-            <i class="fas fa-bolt mr-1"></i>
-            Pronto en YouTube
-        </div>
-    </div>
-</div>
-        </div> <!-- Cierre del grid -->
-
-        <!-- Nota informativa -->
-        <div class="text-center mt-12 pt-8 border-t border-gray-800">
-            <p class="text-gray-400 text-sm">
-                <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
-                Estamos trabajando en nuevos proyectos. Esta sección se actualizará próximamente con contenido real.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-<!-- NUEVA SECCIÓN: COLABORADORES -->
-<section id="colaboradores" class="py-20 bg-black">
-    <div class="container mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-4xl md:text-5xl font-black mb-6">
-                NUESTROS <span class="text-yellow-500">COLABORADORES</span>
-            </h2>
-            <p class="text-xl text-gray-400">
-                El equipo profesional que hace posible la excelencia en cada proyecto
-            </p>
-        </div>
-
-        <!-- Grid de colaboradores -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          <!-- Colaborador 1 -->
-<a href="https://instagram.com/incrife" 
-   target="_blank"
-   class="bg-gray-900 rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 hover:scale-[1.02] block">
-    
-    <div class="flex flex-col items-center text-center">
-        <div class="w-24 h-24 bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 rounded-full flex items-center justify-center mb-6 border-2 border-yellow-500/30 overflow-hidden">
-            <img
-  src="./SaveClip.App_575556125_18074872850235869_5803504733093357044_n.jpg"
-  alt="Foto"
-  width="300"
-            />
-        </div>
-        
-        <h3 class="text-2xl font-bold mb-2 text-white">INCRIFE</h3>
-        <p class="text-yellow-400 font-semibold mb-4">CEO</p>
-        <p class="text-gray-300 mb-6">
-            Una persona donde busca dar oportunidad a las personas
-        </p>
-        
-        <div class="flex gap-3 mt-6">
-            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Productor</span>
-            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Filmaker</span>
-            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Ejecutivo</span>
-        </div>
-    </div>
-</a>
-
-<!-- Colaborador 2 -->
-<a href="https://www.instagram.com/rafa930_oficial/" 
-   target="_blank"
-   class="bg-gray-900 rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 hover:scale-[1.02] block">
-    
-    <div class="flex flex-col items-center text-center">
-        <div class="w-24 h-24 bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 rounded-full flex items-center justify-center mb-6 border-2 border-yellow-500/30 overflow-hidden">
-            <img
-  src="./channels4_profile (4).jpg"
-  alt="Foto de perfil"
-  width="300"
-            />
-        </div>
-        
-        <h3 class="text-2xl font-bold mb-2 text-white">Rafa 930</h3>
-        <p class="text-yellow-400 font-semibold mb-4">CEO</p>
-        <p class="text-gray-300 mb-6">
-            Una persona donde busca dar oportunidad a las personas
-        </p>
-        
-        <div class="flex items-center gap-2 text-sm text-purple-400">
-        </div>
-        
-        <div class="flex gap-3 mt-6">
-            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Productor</span>
-            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Organizador</span>
-            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Ejecutivo</span>
-        </div>
-    </div>
-</a>
-</div> <!-- Cierre del grid -->
-</div> <!-- Cierre del container -->
-</section> <!-- Cierre de la sección -->
-
-   <!-- Sección Modelos/Servicios -->
-<section id="modelos" class="py-20 bg-gray-900">
-    <div class="container mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-4xl md:text-5xl font-black mb-6">
-                 <span class="text-yellow-500">NUESTROS SERVICIOS</span>
-            </h2>
-            <p class="text-xl text-gray-400">
-                Elige el plan que mejor se adapte a tus necesidades
-            </p>
-        </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
                 <!-- Modelo Gratuito -->
-                <div class="model-yellow-card bg-black rounded-3xl p-8 border-2 border-yellow-600/30">
+                <div class="model-card bg-black rounded-3xl p-8 border-2 border-yellow-600/30 center-content">
                     <div class="text-center mb-8">
                         <div class="inline-flex items-center justify-center w-20 h-20 bg-yellow-500/20 rounded-2xl mb-4 border border-yellow-500/30">
                             <i class="fas fa-gift text-yellow-400 text-3xl"></i>
@@ -628,7 +909,7 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                     <div class="space-y-4 mb-8">
                         <div class="flex items-start">
                             <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
-                            <span class="text-gray-300">Todos los servicios de producció musical y visualn</span>
+                            <span class="text-gray-300">Todos los servicios de producción musical y visual</span>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
@@ -640,20 +921,20 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         </div>
                     </div>
                     
-                    <div class="bg-yellow-500/10 rounded-xl p-4 mb-8 border border-yellow-500/20">
+                    <div class="bg-yellow-500/10 rounded-xl p-4 mb-8 border border-yellow-500/20 text-center-mobile">
                         <h4 class="font-bold text-yellow-400 mb-2">CONDICIÓN PRINCIPAL</h4>
                         <p class="text-yellow-300 text-sm">
                             Kurtus Inc retiene el 100% de los derechos de autor
                         </p>
                     </div>
                     
-                    <a href="#contacto" class="btn-yellow w-full text-center py-4 rounded-xl font-bold">
+                    <a href="#contacto" class="btn-yellow w-full text-center py-4 rounded-xl font-bold center-content">
                         <i class="fas fa-file-contract mr-2"></i>SELECCIONAR
                     </a>
                 </div>
 
                 <!-- Modelo Premium -->
-                <div class="model-yellow-card bg-gradient-to-b from-yellow-600/30 to-yellow-500/10 rounded-3xl p-8 border-2 border-yellow-500 relative">
+                <div class="model-card bg-gradient-to-b from-yellow-600/30 to-yellow-500/10 rounded-3xl p-8 border-2 border-yellow-500 relative center-content">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
                         <span class="bg-yellow-500 text-black px-4 py-1 rounded-full text-sm font-bold">
                             RECOMENDADO
@@ -672,7 +953,7 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                     <div class="space-y-4 mb-8">
                         <div class="flex items-start">
                             <i class="fas fa-check text-yellow-400 mt-1 mr-3"></i>
-                            <span class="text-white">Produccion musical completa</span>
+                            <span class="text-white">Producción musical completa</span>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-check text-yellow-400 mt-1 mr-3"></i>
@@ -685,23 +966,23 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         <div class="flex items-start">
                             <i class="fas fa-check text-yellow-400 mt-1 mr-3"></i>
                             <span class="text-white">Estrategias personalizadas</span>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     
-                    <div class="bg-yellow-500/20 rounded-xl p-4 mb-8 border border-yellow-400/30">
+                    <div class="bg-yellow-500/20 rounded-xl p-4 mb-8 border border-yellow-400/30 text-center-mobile">
                         <h4 class="font-bold text-yellow-300 mb-2">CONDICIÓN PRINCIPAL</h4>
                         <p class="text-yellow-200 text-sm">
                             El artista retiene 85% de los derechos
                         </p>
                     </div>
                     
-                    <a href="#contacto" class="btn-yellow-premium w-full text-center py-4 rounded-xl font-bold">
+                    <a href="#contacto" class="btn-yellow w-full text-center py-4 rounded-xl font-bold center-content">
                         <i class="fas fa-star mr-2"></i>SELECCIONAR PREMIUM
                     </a>
                 </div>
 
                 <!-- Modelo Empresas -->
-                <div class="model-yellow-card bg-black rounded-3xl p-8 border-2 border-gray-700">
+                <div class="model-card bg-black rounded-3xl p-8 border-2 border-gray-700 center-content">
                     <div class="text-center mb-8">
                         <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-2xl mb-4 border border-gray-700">
                             <i class="fas fa-building text-gray-400 text-3xl"></i>
@@ -730,16 +1011,15 @@ lo quiero en movil tambien esto <!DOCTYPE html>
                         </div>
                     </div>
                     
-                    <div class="bg-gray-800 rounded-xl p-4 mb-8 border border-gray-700">
+                    <div class="bg-gray-800 rounded-xl p-4 mb-8 border border-gray-700 text-center-mobile">
                         <h4 class="font-bold text-gray-300 mb-2">CONDICIÓN PRINCIPAL</h4>
                         <p class="text-gray-400 text-sm">
                             Negociación personalizada
                         </p>
                     </div>
-                     <a href="#contacto" class="btn-yellow-premium w-full text-center py-4 rounded-xl font-bold">
+                    
+                    <a href="#contacto" class="btn-yellow w-full text-center py-4 rounded-xl font-bold center-content">
                         <i class="fas fa-star mr-2"></i>SELECCIONAR
-                    </a>
-                </div>
                     </a>
                 </div>
             </div>
@@ -749,80 +1029,80 @@ lo quiero en movil tambien esto <!DOCTYPE html>
     <!-- Sección Distribución -->
     <section id="distribucion" class="py-20 bg-black">
         <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-16 section-title">
                 <h2 class="text-4xl md:text-5xl font-black mb-6">
                     DISTRIBUCIÓN <span class="text-yellow-500">GLOBAL</span>
                 </h2>
-                <p class="text-xl text-gray-400">
+                <p class="text-xl text-gray-400 text-center-mobile">
                     Llevamos tu música a todas las plataformas digitales
                 </p>
             </div>
 
-           <!-- Logos de Plataformas -->
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
-    
-    <!-- Spotify -->
-    <a href="https://open.spotify.com/incrife" 
-       target="_blank"
-       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
-        <i class="fab fa-spotify text-4xl text-green-500"></i>
-    </a>
-    
-    <!-- Apple Music -->
-    <a href="https://music.apple.com/incrife" 
-       target="_blank"
-       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
-        <i class="fab fa-apple text-4xl text-gray-300"></i>
-    </a>
-    
-    <!-- Amazon Music -->
-    <a href="https://music.amazon.com/" 
-       target="_blank"
-       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
-        <i class="fab fa-amazon text-4xl text-yellow-500"></i>
-    </a>
-    
-    <!-- YouTube Music -->
-    <a href="https://www.youtube.com/@incrifeb" 
-       target="_blank"
-       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
-        <i class="fab fa-youtube text-4xl text-red-500"></i>
-    </a>
-    
-    <!-- TikTok -->
-    <a href="https://www.tiktok.com/@kurtusin?lang=es-419" 
-       target="_blank"
-       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
-        <i class="fab fa-tiktok text-4xl text-white"></i>
-    </a>
-    
-    <!-- Deezer -->
-    <a href="https://www.deezer.com/" 
-       target="_blank"
-       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
-        <i class="fab fa-deezer text-4xl text-purple-500"></i>
-    </a>
-    
-</div>
+            <!-- Logos de Plataformas -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+                
+                <!-- Spotify -->
+                <a href="https://open.spotify.com/incrife" 
+                   target="_blank"
+                   class="platform-card bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300 center-content">
+                    <i class="fab fa-spotify text-4xl text-green-500"></i>
+                </a>
+                
+                <!-- Apple Music -->
+                <a href="https://music.apple.com/incrife" 
+                   target="_blank"
+                   class="platform-card bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300 center-content">
+                    <i class="fab fa-apple text-4xl text-gray-300"></i>
+                </a>
+                
+                <!-- Amazon Music -->
+                <a href="https://music.amazon.com/" 
+                   target="_blank"
+                   class="platform-card bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300 center-content">
+                    <i class="fab fa-amazon text-4xl text-yellow-500"></i>
+                </a>
+                
+                <!-- YouTube Music -->
+                <a href="https://www.youtube.com/@incrifeb" 
+                   target="_blank"
+                   class="platform-card bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300 center-content">
+                    <i class="fab fa-youtube text-4xl text-red-500"></i>
+                </a>
+                
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@kurtusin?lang=es-419" 
+                   target="_blank"
+                   class="platform-card bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300 center-content">
+                    <i class="fab fa-tiktok text-4xl text-white"></i>
+                </a>
+                
+                <!-- Deezer -->
+                <a href="https://www.deezer.com/" 
+                   target="_blank"
+                   class="platform-card bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300 center-content">
+                    <i class="fab fa-deezer text-4xl text-purple-500"></i>
+                </a>
+                
+            </div>
 
             <!-- Estadísticas -->
-            <div class="bg-gradient-to-r from-yellow-600/30 to-yellow-500/20 rounded-3xl p-12 border border-yellow-600/30">
-                <div class="grid md:grid-cols-4 gap-8">
+            <div class="bg-gradient-to-r from-yellow-600/30 to-yellow-500/20 rounded-3xl p-8 md:p-12 border border-yellow-600/30">
+                <div class="grid md:grid-cols-4 gap-4 md:gap-8">
                     <div class="text-center">
-                        <div class="text-5xl font-black mb-2 text-yellow-400">100+</div>
-                        <p class="text-yellow-300">Plataformas</p>
+                        <div class="text-3xl md:text-5xl font-black mb-2 text-yellow-400">100+</div>
+                        <p class="text-yellow-300 text-sm md:text-base">Plataformas</p>
                     </div>
                     <div class="text-center">
-                        <div class="text-5xl font-black mb-2 text-yellow-400">200+</div>
-                        <p class="text-yellow-300">Países</p>
+                        <div class="text-3xl md:text-5xl font-black mb-2 text-yellow-400">200+</div>
+                        <p class="text-yellow-300 text-sm md:text-base">Países</p>
                     </div>
                     <div class="text-center">
-                        <div class="text-5xl font-black mb-2 text-yellow-400">48h</div>
-                        <p class="text-yellow-300">Distribución</p>
+                        <div class="text-3xl md:text-5xl font-black mb-2 text-yellow-400">48h</div>
+                        <p class="text-yellow-300 text-sm md:text-base">Distribución</p>
                     </div>
                     <div class="text-center">
-                        <div class="text-5xl font-black mb-2 text-yellow-400">100%</div>
-                        <p class="text-yellow-300">Royalties</p>
+                        <div class="text-3xl md:text-5xl font-black mb-2 text-yellow-400">100%</div>
+                        <p class="text-yellow-300 text-sm md:text-base">Royalties</p>
                     </div>
                 </div>
             </div>
@@ -832,205 +1112,145 @@ lo quiero en movil tambien esto <!DOCTYPE html>
     <!-- Sección Clientes -->
     <section id="clientes" class="py-20 bg-gray-900">
         <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="text-center max-w-3xl mx-auto mb-16 section-title">
                 <h2 class="text-4xl md:text-5xl font-black mb-6">
                     CLIENTES <span class="text-yellow-500">DESTACADOS</span>
                 </h2>
-                <p class="text-xl text-gray-400">
+                <p class="text-xl text-gray-400 text-center-mobile">
                     Artistas y sellos que confían en nuestra producción
                 </p>
             </div>
 
             <!-- Grid de Clientes -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
-                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
-                        <i class="fas fa-microphone text-yellow-400 text-2xl"></i>
+                <div class="client-card bg-black rounded-2xl p-6 md:p-8 text-center border border-yellow-600/20 center-content">
+                    <div class="client-avatar-yellow w-16 h-16 md:w-20 md:h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-microphone text-yellow-400 text-xl md:text-2xl"></i>
                     </div>
-                    <h4 class="font-bold text-lg mb-2 text-white">RAFA 930</h4>
-                    <p class="text-yellow-400 text-sm mb-4">Artista Urbano</p>
-                    <div class="text-yellow-500 font-semibold"></div>
+                    <h4 class="font-bold text-lg md:text-xl mb-2 text-white">RAFA 930</h4>
+                    <p class="text-yellow-400 text-sm md:text-base mb-4">Artista Urbano</p>
                 </div>
 
-                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
-                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
-                        <i class="fas fa-compact-disc text-yellow-400 text-2xl"></i>
+                <div class="client-card bg-black rounded-2xl p-6 md:p-8 text-center border border-yellow-600/20 center-content">
+                    <div class="client-avatar-yellow w-16 h-16 md:w-20 md:h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-compact-disc text-yellow-400 text-xl md:text-2xl"></i>
                     </div>
-                    <h4 class="font-bold text-lg mb-2 text-white">URBAN BEATS</h4>
-                    <p class="text-yellow-400 text-sm mb-4">Sello Discográfico</p>
-                    <div class="text-yellow-500 font-semibold"></div>
+                    <h4 class="font-bold text-lg md:text-xl mb-2 text-white">URBAN BEATS</h4>
+                    <p class="text-yellow-400 text-sm md:text-base mb-4">Sello Discográfico</p>
                 </div>
 
-                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
-                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
-                        <i class="fas fa-guitar text-yellow-400 text-2xl"></i>
+                <div class="client-card bg-black rounded-2xl p-6 md:p-8 text-center border border-yellow-600/20 center-content">
+                    <div class="client-avatar-yellow w-16 h-16 md:w-20 md:h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-guitar text-yellow-400 text-xl md:text-2xl"></i>
                     </div>
-                    <h4 class="font-bold text-lg mb-2 text-white">CARLOS MÉNDEZ</h4>
-                    <p class="text-yellow-400 text-sm mb-4">Artista Rock</p>
-                    <div class="text-yellow-500 font-semibold"></div>
+                    <h4 class="font-bold text-lg md:text-xl mb-2 text-white">CARLOS MÉNDEZ</h4>
+                    <p class="text-yellow-400 text-sm md:text-base mb-4">Artista Rock</p>
                 </div>
 
-                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
-                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
-                        <i class="fas fa-building text-yellow-400 text-2xl"></i>
+                <div class="client-card bg-black rounded-2xl p-6 md:p-8 text-center border border-yellow-600/20 center-content">
+                    <div class="client-avatar-yellow w-16 h-16 md:w-20 md:h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-building text-yellow-400 text-xl md:text-2xl"></i>
                     </div>
-                    <h4 class="font-bold text-lg mb-2 text-white">MUSIC CORP</h4>
-                    <p class="text-yellow-400 text-sm mb-4">Empresa Audiovisual</p>
-                    <div class="text-yellow-500 font-semibold"></div>
+                    <h4 class="font-bold text-lg md:text-xl mb-2 text-white">MUSIC CORP</h4>
+                    <p class="text-yellow-400 text-sm md:text-base mb-4">Empresa Audiovisual</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección Contacto -->
-<section id="contacto" class="py-20 bg-black">
-    <div class="container mx-auto px-4 max-w-4xl">
-        <h2 class="text-4xl font-bold text-center mb-4 text-white">CONTACTO</h2>
-        <p class="text-xl text-gray-400 text-center mb-8">
-            Solicita información o presupuesto para tu proyecto
-        </p>
+    <section id="contacto" class="py-20 bg-black">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-white">CONTACTO</h2>
+            <p class="text-lg md:text-xl text-gray-400 text-center mb-8">
+                Solicita información o presupuesto para tu proyecto
+            </p>
 
-        <!-- FORMULARIO MODIFICADO -->
-        <form action="https://formspree.io/f/mvzgdnay" 
-              method="POST"
-              class="bg-gray-900 rounded-2xl shadow-xl p-8 border border-yellow-600/20">
-            
-            <div class="grid md:grid-cols-2 gap-4 mb-4">
-                <div>
-                    <label class="block text-white mb-2">Nombre Completo *</label>
-                    <input type="text" 
-                           name="nombre"
-                           required 
-                           class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+            <!-- FORMULARIO -->
+            <form action="https://formspree.io/f/mvzgdnay" 
+                  method="POST"
+                  class="bg-gray-900 rounded-2xl shadow-xl p-6 md:p-8 border border-yellow-600/20">
+                
+                <div class="form-grid md:grid md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label class="block text-white mb-2">Nombre Completo *</label>
+                        <input type="text" 
+                               name="nombre"
+                               required 
+                               class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+                    </div>
+                    <div>
+                        <label class="block text-white mb-2">Email *</label>
+                        <input type="email" 
+                               name="email"
+                               required 
+                               class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+                    </div>
                 </div>
-                <div>
-                    <label class="block text-white mb-2">Email *</label>
-                    <input type="email" 
-                           name="email"
-                           required 
-                           class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+                
+                <div class="mb-4">
+                    <label class="block text-white mb-2">Tipo de Cliente *</label>
+                    <select name="tipo_cliente"
+                            required 
+                            class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+                        <option value="">Seleccionar...</option>
+                        <option value="artist">Artista Independiente</option>
+                        <option value="band">Banda/Grupo</option>
+                        <option value="label">Sello Discográfico</option>
+                        <option value="company">Empresa/Corporación</option>
+                    </select>
                 </div>
-            </div>
-            
-            <div class="mb-4">
-                <label class="block text-white mb-2">Tipo de Cliente *</label>
-                <select name="tipo_cliente"
-                        required 
-                        class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
-                    <option value="">Seleccionar...</option>
-                    <option value="artist">Artista Independiente</option>
-                    <option value="band">Banda/Grupo</option>
-                    <option value="label">Sello Discográfico</option>
-                    <option value="company">Empresa/Corporación</option>
-                </select>
-            </div>
-            
-            <div class="mb-4">
-                <label class="block text-white mb-2">Modelo de Interés</label>
-                <div class="grid grid-cols-3 gap-2">
-                    <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700">
-                        <input type="radio" name="modelo" value="gratuito" class="mr-3">
-                        <span class="text-sm text-gray-300">Gratuito</span>
-                    </label>
-                    <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700">
-                        <input type="radio" name="modelo" value="premium" class="mr-3">
-                        <span class="text-sm text-gray-300">Premium</span>
-                    </label>
-                    <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700">
-                        <input type="radio" name="modelo" value="empresas" class="mr-3">
-                        <span class="text-sm text-gray-300">Empresas</span>
-                    </label>
+                
+                <div class="mb-4">
+                    <label class="block text-white mb-2">Modelo de Interés</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700 center-content">
+                            <input type="radio" name="modelo" value="gratuito" class="mr-3">
+                            <span class="text-sm text-gray-300">Gratuito</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700 center-content">
+                            <input type="radio" name="modelo" value="premium" class="mr-3">
+                            <span class="text-sm text-gray-300">Premium</span>
+                        </label>
+                        <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700 center-content">
+                            <input type="radio" name="modelo" value="empresas" class="mr-3">
+                            <span class="text-sm text-gray-300">Empresas</span>
+                        </label>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="mb-6">
-                <label class="block text-white mb-2">Mensaje *</label>
-                <textarea name="mensaje"
-                          required 
-                          rows="4" 
-                          class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20" 
-                          placeholder="Describe tu proyecto..."></textarea>
-            </div>
-            
-            <button type="submit" class="btn-yellow w-full py-4 rounded-xl font-bold text-lg">
-                <i class="fas fa-paper-plane mr-2"></i>ENVIAR SOLICITUD
-            </button>
-        </form>
-    </div>
-    <!-- Botón flotante simple que aparece/desaparece -->
-<a href="colaborar.html" 
-   id="collaborate-btn"
-   class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 flex items-center gap-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold px-6 py-3 rounded-xl shadow-lg transition-all duration-500 opacity-0 -translate-y-5">
-    <i class="fas fa-briefcase"></i>
-    <span>¿BUSCAS TRABAJAR CON NOSOTROS?</span>
-    <i class="fas fa-arrow-right ml-2"></i>
-</a>
-
-<script>
-// Aparece/desaparece cíclicamente
-let isVisible = false;
-let cycleInterval;
-
-function showButton() {
-    const btn = document.getElementById('collaborate-btn');
-    btn.classList.remove('opacity-0', '-translate-y-5');
-    btn.classList.add('opacity-100', 'translate-y-0');
-    isVisible = true;
-}
-
-function hideButton() {
-    const btn = document.getElementById('collaborate-btn');
-    btn.classList.remove('opacity-100', 'translate-y-0');
-    btn.classList.add('opacity-0', '-translate-y-5');
-    isVisible = false;
-}
-
-// Ciclo: 5 segundos visible, 10 segundos oculto
-function startCycle() {
-    // Primera aparición después de 8 segundos
-    setTimeout(() => {
-        showButton();
+                
+                <div class="mb-6">
+                    <label class="block text-white mb-2">Mensaje *</label>
+                    <textarea name="mensaje"
+                              required 
+                              rows="4" 
+                              class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20" 
+                              placeholder="Describe tu proyecto..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-yellow w-full py-4 rounded-xl font-bold text-lg center-content">
+                    <i class="fas fa-paper-plane mr-2"></i>ENVIAR SOLICITUD
+                </button>
+            </form>
+        </div>
         
-        // Ciclo continuo
-        cycleInterval = setInterval(() => {
-            if (isVisible) {
-                // Está visible → ocultar después de 5 segundos
-                setTimeout(() => {
-                    hideButton();
-                }, 5000);
-            } else {
-                // Está oculto → mostrar después de 10 segundos
-                setTimeout(() => {
-                    showButton();
-                }, 10000);
-            }
-        }, 15000); // Ciclo total: 15 segundos
-    }, 8000); // Primera aparición a los 8 segundos
-}
+        <!-- Botón flotante "¿Buscas trabajar?" -->
+        <a href="colaborar.html" 
+           id="collaborate-btn"
+           class="fixed bottom-6 left-4 right-4 md:left-1/2 md:transform md:-translate-x-1/2 z-40 flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold px-4 py-3 rounded-xl shadow-lg transition-all duration-500 opacity-0 -translate-y-5 text-center">
+            <i class="fas fa-briefcase"></i>
+            <span>¿BUSCAS TRABAJAR CON NOSOTROS?</span>
+            <i class="fas fa-arrow-right ml-2 hidden md:inline"></i>
+        </a>
+    </section>
 
-// Iniciar cuando la página cargue
-document.addEventListener('DOMContentLoaded', startCycle);
-
-// Mostrar siempre al hacer hover (opcional)
-document.getElementById('collaborate-btn').addEventListener('mouseenter', () => {
-    clearInterval(cycleInterval);
-    showButton();
-});
-
-// Reanudar ciclo al salir del hover
-document.getElementById('collaborate-btn').addEventListener('mouseleave', () => {
-    setTimeout(() => {
-        startCycle();
-    }, 2000); // Espera 2 segundos antes de reanudar
-});
-</script>
-</section>
+    <!-- Footer -->
     <footer class="bg-gray-900 py-12 border-t border-yellow-600/20">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8 mb-12">
                 <!-- Columna 1 -->
-                <div>
-                    <div class="flex items-center gap-3 mb-6">
+                <div class="center-content text-center-mobile">
+                    <div class="flex items-center gap-3 mb-6 justify-center md:justify-start">
                         <div class="logo-yellow w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center">
                             <i class="fas fa-compact-disc text-black"></i>
                         </div>
@@ -1042,24 +1262,24 @@ document.getElementById('collaborate-btn').addEventListener('mouseleave', () => 
                     <p class="text-gray-400 mb-6">
                         Productora musical profesional especializada en producción y distribución.
                     </p>
-                    <div class="flex gap-4">
-                        <a href="#" class="social-yellow">
+                    <div class="flex gap-4 justify-center md:justify-start">
+                        <a href="#" class="social-yellow w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-500/20 hover:text-yellow-500 transition-all">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="social-yellow">
+                        <a href="#" class="social-yellow w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-500/20 hover:text-yellow-500 transition-all">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="#" class="social-yellow">
+                        <a href="#" class="social-yellow w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-500/20 hover:text-yellow-500 transition-all">
                             <i class="fab fa-spotify"></i>
                         </a>
-                        <a href="#" class="social-yellow">
+                        <a href="#" class="social-yellow w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-yellow-500/20 hover:text-yellow-500 transition-all">
                             <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
                 </div>
 
                 <!-- Columna 2 -->
-                <div>
+                <div class="text-center-mobile">
                     <h4 class="text-xl font-bold mb-6 text-white">SERVICIOS</h4>
                     <ul class="space-y-3">
                         <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Grabación</a></li>
@@ -1070,7 +1290,7 @@ document.getElementById('collaborate-btn').addEventListener('mouseleave', () => 
                 </div>
 
                 <!-- Columna 3 -->
-                <div>
+                <div class="text-center-mobile">
                     <h4 class="text-xl font-bold mb-6 text-white">MODELOS</h4>
                     <ul class="space-y-3">
                         <li><a href="#modelos" class="text-gray-400 hover:text-yellow-400 transition">Modelo Gratuito</a></li>
@@ -1081,22 +1301,22 @@ document.getElementById('collaborate-btn').addEventListener('mouseleave', () => 
                 </div>
 
                 <!-- Columna 4 -->
-                <div>
+                <div class="text-center-mobile">
                     <h4 class="text-xl font-bold mb-6 text-white">CONTACTO</h4>
                     <ul class="space-y-3 text-gray-400">
-                        <li class="flex items-center gap-3">
+                        <li class="flex items-center gap-3 justify-center md:justify-start">
                             <i class="fas fa-envelope text-yellow-500"></i>
                             incrifemusic@gmail.com
                         </li>
-                        <li class="flex items-center gap-3">
+                        <li class="flex items-center gap-3 justify-center md:justify-start">
                             <i class="fas fa-phone text-yellow-500"></i>
                             +34 624 17 02 04
                         </li>
-                        <li class="flex items-center gap-3">
+                        <li class="flex items-center gap-3 justify-center md:justify-start">
                             <i class="fas fa-map-marker-alt text-yellow-500"></i>
                             Barcelona, España
                         </li>
-                        <li class="flex items-center gap-3">
+                        <li class="flex items-center gap-3 justify-center md:justify-start">
                             <i class="fas fa-clock text-yellow-500"></i>
                             Lun-Vie: 9:00-20:00
                         </li>
@@ -1111,457 +1331,65 @@ document.getElementById('collaborate-btn').addEventListener('mouseleave', () => 
         </div>
     </footer>
 
-<div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
-    
-<!-- Botón WhatsApp con mensaje flotante -->
-<div class="fixed bottom-6 right-6 flex flex-col items-end z-50">
-    
-    <!-- Mensaje que aparece -->
-    <div id="whatsapp-message" class="mb-3 bg-gray-900 text-white text-sm py-2 px-4 rounded-lg shadow-xl border border-yellow-500/30 opacity-0 transform translate-x-10 transition-all duration-500">
-        <div class="flex items-center gap-2">
-            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span>¿Necesitas ayuda? Escríbenos</span>
-        </div>
-        <div class="absolute -bottom-1 right-4 w-3 h-3 bg-gray-900 transform rotate-45 border-r border-b border-yellow-500/30"></div>
-    </div>
-    
-    <!-- Botón WhatsApp -->
-    <a href="https://wa.me/34624170204" 
-       target="_blank" 
-       class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all transform hover:scale-105">
-        <i class="fab fa-whatsapp text-2xl"></i>
-    </a>
-    
-</div>
-
-<script>
-// Aparece el mensaje después de 3 segundos
-setTimeout(function() {
-    const message = document.getElementById('whatsapp-message');
-    message.classList.remove('opacity-0', 'translate-x-10');
-    message.classList.add('opacity-100', 'translate-x-0');
-}, 3000);
-
-// Desaparece después de 10 segundos
-setTimeout(function() {
-    const message = document.getElementById('whatsapp-message');
-    message.classList.remove('opacity-100', 'translate-x-0');
-    message.classList.add('opacity-0', 'translate-x-10');
-}, 13000);
-
-// Aparece cada 60 segundos (1 minuto)
-setInterval(function() {
-    const message = document.getElementById('whatsapp-message');
-    
-    // Solo aparece si no está visible ya
-    if (message.classList.contains('opacity-0')) {
-        message.classList.remove('opacity-0', 'translate-x-10');
-        message.classList.add('opacity-100', 'translate-x-0');
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-container fixed bottom-6 right-6 flex flex-col items-end z-50">
         
-        // Desaparece después de 7 segundos
-        setTimeout(function() {
-            message.classList.remove('opacity-100', 'translate-x-0');
-            message.classList.add('opacity-0', 'translate-x-10');
-        }, 7000);
-    }
-}, 60000); // 60000 ms = 1 minuto
-</script>
-</div>
+        <!-- Mensaje flotante -->
+        <div id="whatsapp-message" class="mb-3 bg-gray-900 text-white text-sm py-2 px-4 rounded-lg shadow-xl border border-yellow-500/30 opacity-0 transform translate-x-10 transition-all duration-500">
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span>¿Necesitas ayuda? Escríbenos</span>
+            </div>
+            <div class="absolute -bottom-1 right-4 w-3 h-3 bg-gray-900 transform rotate-45 border-r border-b border-yellow-500/30"></div>
+        </div>
+        
+        <!-- Botón WhatsApp -->
+        <a href="https://wa.me/34624170204" 
+           target="_blank" 
+           class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all transform hover:scale-105">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+        
+    </div>
+
     <!-- Scripts -->
-    <script src="js/main.js"></script>
+    <script>
+        // Botón flotante "¿Buscas trabajar?"
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('collaborate-btn');
+            
+            // Mostrar después de 3 segundos
+            setTimeout(() => {
+                btn.classList.remove('opacity-0', '-translate-y-5');
+                btn.classList.add('opacity-100', 'translate-y-0');
+            }, 3000);
+            
+            // WhatsApp message
+            const whatsappMsg = document.getElementById('whatsapp-message');
+            setTimeout(() => {
+                whatsappMsg.classList.remove('opacity-0', 'translate-x-10');
+                whatsappMsg.classList.add('opacity-100', 'translate-x-0');
+                
+                setTimeout(() => {
+                    whatsappMsg.classList.remove('opacity-100', 'translate-x-0');
+                    whatsappMsg.classList.add('opacity-0', 'translate-x-10');
+                }, 7000);
+            }, 2000);
+            
+            // Smooth scroll para enlaces internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-<!-- FAQ Assistant - Estilo profesional minimalista -->
-<div id="faq-assistant" class="fixed bottom-6 left-6 z-40 hidden md:block">
-    
-    <!-- Botón principal de activación -->
-    <button id="assistant-toggle-btn" 
-            class="flex items-center gap-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white px-4 py-3 rounded-xl shadow-2xl hover:shadow-lg hover:shadow-yellow-500/20 border border-gray-700 hover:border-yellow-500/50 transition-all duration-300 group">
-        <div class="relative">
-            <div class="w-8 h-8 bg-gradient-to-r from-yellow-600 to-yellow-700 rounded-lg flex items-center justify-center">
-                <i class="fas fa-question text-white text-sm"></i>
-            </div>
-            <div class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-        </div>
-        <div class="text-left">
-            <div class="text-sm font-semibold text-white">Preguntas Frecuentes</div>
-            <div class="text-xs text-gray-400">Respuestas rápidas</div>
-        </div>
-        <i class="fas fa-chevron-down text-gray-500 ml-2 group-hover:text-yellow-500 transition-transform duration-300" id="toggle-icon"></i>
-    </button>
-    
-    <!-- Panel de FAQ (oculto inicialmente) -->
-    <div id="faq-panel" 
-         class="absolute bottom-16 left-0 w-72 bg-gray-900 rounded-xl border border-gray-800 shadow-2xl overflow-hidden opacity-0 transform scale-95 -translate-y-5 transition-all duration-300 pointer-events-none">
-        
-        <!-- Cabecera -->
-        <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-4 border-b border-gray-800">
-            <div class="flex items-center justify-between">
-                <div>
-                    <h3 class="text-white font-bold text-sm">FAQ PROFESSIONAL</h3>
-                    <p class="text-gray-400 text-xs">Selecciona una categoría</p>
-                </div>
-                <div class="flex items-center gap-2">
-                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <span class="text-green-500 text-xs font-medium">En línea</span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Contenido - Acordeón -->
-        <div class="max-h-80 overflow-y-auto">
-            
-            <!-- Precios -->
-            <div class="faq-category border-b border-gray-800">
-                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-yellow-600/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-tag text-yellow-500 text-sm"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-white text-sm font-medium">Precios y Tarifas</div>
-                            <div class="text-gray-400 text-xs">Costes de servicios</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
-                </button>
-                <div class="faq-content hidden px-4 pb-3">
-                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-2">
-                        <div class="flex justify-between items-center">
-                            <span class="text-white text-sm">Videoclip profesional</span>
-                            <span class="text-yellow-500 font-bold">200€</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-white text-sm">Grabación en estudio</span>
-                            <span class="text-yellow-500 font-bold">30€</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <span class="text-white text-sm">Mezcla y Master</span>
-                            <span class="text-yellow-500 font-bold">30€</span>
-                        </div>
-                        <div class="pt-2 border-t border-gray-700">
-                            <span class="text-green-400 text-sm font-medium">Servicio gratuito disponible</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Derechos -->
-            <div class="faq-category border-b border-gray-800">
-                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-balance-scale text-blue-400 text-sm"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-white text-sm font-medium">Derechos y Porcentajes</div>
-                            <div class="text-gray-400 text-xs">Propiedad intelectual</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
-                </button>
-                <div class="faq-content hidden px-4 pb-3">
-                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-3">
-                        <div>
-                            <div class="text-green-400 text-sm font-medium mb-1">Modalidad Gratuita</div>
-                            <div class="text-white text-xs">• Cubrimos todos los costes<br>• Artista conserva 100% derechos</div>
-                        </div>
-                        <div>
-                            <div class="text-blue-400 text-sm font-medium mb-1">Modalidad de Pago</div>
-                            <div class="text-white text-xs">• Cliente paga el servicio<br>• Artista recibe 90% derechos<br>• Nosotros 10%</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Distribución -->
-            <div class="faq-category border-b border-gray-800">
-                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-purple-600/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-globe text-purple-400 text-sm"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-white text-sm font-medium">Distribución</div>
-                            <div class="text-gray-400 text-xs">Plataformas digitales</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
-                </button>
-                <div class="faq-content hidden px-4 pb-3">
-                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-2">
-                        <div class="text-white text-sm">• Distribuimos a nuestro nombre</div>
-                        <div class="text-white text-sm">• Todas las plataformas principales</div>
-                        <div class="text-white text-sm">• Creamos canales para el artista</div>
-                        <div class="text-gray-400 text-xs mt-2">* Se discute personalmente según proyecto</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Métodos de Pago -->
-            <div class="faq-category border-b border-gray-800">
-                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-green-600/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-credit-card text-green-400 text-sm"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-white text-sm font-medium">Métodos de Pago</div>
-                            <div class="text-gray-400 text-xs">Formas de pago aceptadas</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
-                </button>
-                <div class="faq-content hidden px-4 pb-3">
-                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-2">
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-6 bg-blue-500/20 rounded flex items-center justify-center">
-                                <i class="fab fa-paypal text-blue-400 text-xs"></i>
-                            </div>
-                            <span class="text-white text-sm">PayPal</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center">
-                                <i class="fas fa-university text-green-400 text-xs"></i>
-                            </div>
-                            <span class="text-white text-sm">Transferencia bancaria</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <div class="w-6 h-6 bg-red-500/20 rounded flex items-center justify-center">
-                                <i class="fas fa-mobile-alt text-red-400 text-xs"></i>
-                            </div>
-                            <span class="text-white text-sm">Bizum</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Ubicación -->
-            <div class="faq-category border-b border-gray-800">
-                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-red-600/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-map-marker-alt text-red-400 text-sm"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-white text-sm font-medium">Ubicación</div>
-                            <div class="text-gray-400 text-xs">Estudio y trabajo remoto</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
-                </button>
-                <div class="faq-content hidden px-4 pb-3">
-                    <div class="bg-gray-800/30 rounded-lg p-3">
-                        <div class="text-white text-sm font-medium mb-2">Estudio principal:</div>
-                        <div class="text-white text-sm">Barcelona, España</div>
-                        <div class="text-gray-400 text-xs mt-3">También trabajamos de forma remota con artistas de cualquier ubicación.</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Tiempos -->
-            <div class="faq-category border-b border-gray-800">
-                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 bg-cyan-600/20 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-clock text-cyan-400 text-sm"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-white text-sm font-medium">Tiempos de Entrega</div>
-                            <div class="text-gray-400 text-xs">Estimaciones por servicio</div>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
-                </button>
-                <div class="faq-content hidden px-4 pb-3">
-                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-3">
-                        <div>
-                            <div class="text-white text-sm font-medium">Videoclip:</div>
-                            <div class="text-gray-400 text-xs">• Grabación: 1 día<br>• Edición: 3 días máximo</div>
-                        </div>
-                        <div>
-                            <div class="text-white text-sm font-medium">Sesión de estudio:</div>
-                            <div class="text-gray-400 text-xs">• Duración: 1-2 horas</div>
-                        </div>
-                        <div>
-                            <div class="text-white text-sm font-medium">Mezcla y Master:</div>
-                            <div class="text-gray-400 text-xs">• Entrega: 2 días</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    </div>
-                </a>
-            </div>
-            
-        </div>
-    </div>
-</div>
-
-<script>
-// Elementos principales
-const toggleBtn = document.getElementById('assistant-toggle-btn');
-const toggleIcon = document.getElementById('toggle-icon');
-const faqPanel = document.getElementById('faq-panel');
-const categoryBtns = document.querySelectorAll('.faq-category-btn');
-
-// Estado
-let panelOpen = false;
-
-// Abrir/cerrar panel
-toggleBtn.addEventListener('click', () => {
-    if (!panelOpen) {
-        // Abrir panel
-        faqPanel.style.opacity = '1';
-        faqPanel.style.transform = 'scale(1) translateY(0)';
-        faqPanel.style.pointerEvents = 'auto';
-        toggleIcon.style.transform = 'rotate(180deg)';
-        panelOpen = true;
-    } else {
-        // Cerrar panel
-        faqPanel.style.opacity = '0';
-        faqPanel.style.transform = 'scale(0.95) translateY(-5px)';
-        faqPanel.style.pointerEvents = 'none';
-        toggleIcon.style.transform = 'rotate(0deg)';
-        
-        // Cerrar todas las categorías abiertas
-        document.querySelectorAll('.faq-content').forEach(content => {
-            content.classList.add('hidden');
-            const icon = content.previousElementSibling.querySelector('.fa-chevron-right');
-            if (icon) {
-                icon.style.transform = 'rotate(0deg)';
-            }
-        });
-        
-        panelOpen = false;
-    }
-});
-
-// Acordeón para categorías
-categoryBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation(); // Evitar que se cierre el panel
-        
-        const content = btn.nextElementSibling;
-        const icon = btn.querySelector('.fa-chevron-right');
-        
-        if (content.classList.contains('hidden')) {
-            // Cerrar otras categorías
-            document.querySelectorAll('.faq-content').forEach(otherContent => {
-                if (otherContent !== content) {
-                    otherContent.classList.add('hidden');
-                    const otherIcon = otherContent.previousElementSibling.querySelector('.fa-chevron-right');
-                    if (otherIcon) {
-                        otherIcon.style.transform = 'rotate(0deg)';
-                    }
-                }
-            });
-            
-            // Abrir esta categoría
-            content.classList.remove('hidden');
-            icon.style.transform = 'rotate(90deg)';
-            
-            // Scroll a la categoría si no está completamente visible
-            content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        } else {
-            // Cerrar esta categoría
-            content.classList.add('hidden');
-            icon.style.transform = 'rotate(0deg)';
-        }
-    });
-});
-
-// Cerrar panel al hacer clic fuera
-document.addEventListener('click', (e) => {
-    if (panelOpen && 
-        !faqPanel.contains(e.target) && 
-        !toggleBtn.contains(e.target)) {
-        
-        faqPanel.style.opacity = '0';
-        faqPanel.style.transform = 'scale(0.95) translateY(-5px)';
-        faqPanel.style.pointerEvents = 'none';
-        toggleIcon.style.transform = 'rotate(0deg)';
-        
-        // Cerrar categorías
-        document.querySelectorAll('.faq-content').forEach(content => {
-            content.classList.add('hidden');
-            const icon = content.previousElementSibling.querySelector('.fa-chevron-right');
-            if (icon) {
-                icon.style.transform = 'rotate(0deg)';
-            }
-        });
-        
-        panelOpen = false;
-    }
-});
-
-// Efecto hover en el botón principal
-toggleBtn.addEventListener('mouseenter', () => {
-    if (!panelOpen) {
-        toggleBtn.style.transform = 'translateY(-2px)';
-    }
-});
-
-toggleBtn.addEventListener('mouseleave', () => {
-    if (!panelOpen) {
-        toggleBtn.style.transform = 'translateY(0)';
-    }
-});
-</script>
-
-<style>
-/* Animaciones y estilos */
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-}
-
-.animate-pulse {
-    animation: pulse 2s infinite;
-}
-
-/* Transiciones suaves */
-#faq-assistant * {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Scrollbar personalizado */
-#faq-panel .max-h-80::-webkit-scrollbar {
-    width: 4px;
-}
-
-#faq-panel .max-h-80::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-#faq-panel .max-h-80::-webkit-scrollbar-thumb {
-    background: rgba(234, 179, 8, 0.3);
-    border-radius: 2px;
-}
-
-#faq-panel .max-h-80::-webkit-scrollbar-thumb:hover {
-    background: rgba(234, 179, 8, 0.5);
-}
-
-/* Efectos de profundidad */
-.shadow-2xl {
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-}
-
-.hover\:shadow-lg:hover {
-    box-shadow: 0 10px 25px rgba(234, 179, 8, 0.1);
-}
-
-/* Acordeón suave */
-.faq-content {
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-}
-
-/* Ajustes responsive */
-@media (max-width: 768px) {
-    #faq-assistant {
-        display: none;
-    }
-}
-</style>
-<a href="test.html">PRUEBA</a>
