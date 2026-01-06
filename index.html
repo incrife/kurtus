@@ -1,1269 +1,1088 @@
-<!DOCTYPE html>
+lo quiero en movil tambien esto <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- VIEWPORT OPTIMIZADO PARA MÓVIL -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO OPTIMIZADO PARA PRODUCCIÓN MUSICAL Y ARTISTAS EMERGENTES -->
-    <title>Kurtus Inc | Productora Musical Barcelona | Grabación, Mezcla & Distribución</title>
-    <meta name="description" content="Productora musical en Barcelona especializada en artistas emergentes. Grabación profesional, mezcla, mastering, producción de videoclips y distribución global en Spotify, Apple Music.">
-    <meta name="author" content="Kurtus Inc - Productora Musical Barcelona">
+    <!-- SEO para Productora Musical -->
+    <title>Kurtus Inc | Productores l & Distribución</title>
+    <meta name="description" content="Kurtus Inc - Productora musical profesional. Grabación, mezcla, mastering, producción audiovisual y distribución global.">
+    <meta name="author" content="Kurtus Inc">
     <meta http-equiv="Content-Language" content="es">
-    <meta name="keywords" content="productora musical Barcelona, artistas emergentes, estudio grabación Barcelona, mezcla mastering, producción musical, distribución Spotify, videoclips profesionales, música urbana, beats, grabación vocal">
-    
-    <!-- OPEN GRAPH OPTIMIZADO -->
-    <meta property="og:title" content="Kurtus Inc | Productora Musical para Artistas Emergentes en Barcelona">
-    <meta property="og:description" content="Ayudamos a artistas emergentes a producir y distribuir su música profesionalmente. Grabación, mezcla, mastering y videoclips en Barcelona.">
-    <meta property="og:image" content="https://kurtusinc.com/images/logo-kurtus-yellow.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta name="keywords" content="productora musical, estudio grabación, mezcla, mastering, distribución, música">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kurtus Inc - Productora Musical Profesional">
+    <meta property="og:description" content="Producción musical integral: grabación, edición, mezcla, mastering y distribución.">
+    <meta property="og:image" content="images/logo-kurtus-yellow.png">
     <meta property="og:url" content="https://kurtusinc.com">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_ES">
-    
-    <!-- TWITTER CARD -->
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kurtus Inc - Productora Musical Barcelona">
-    <meta name="twitter:description" content="Productora musical para artistas emergentes. Grabación, mezcla, mastering y distribución profesional.">
-    <meta name="twitter:image" content="https://kurtusinc.com/images/logo-kurtus-yellow.png">
+    <meta name="twitter:title" content="Kurtus Inc Productora">
     
-    <!-- CANONICAL URL -->
-    <link rel="canonical" href="https://kurtusinc.com">
-    
-    <!-- FONTS -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- TAILWIND CSS -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'montserrat': ['Montserrat', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif']
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite alternate',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0px)' },
-                            '50%': { transform: 'translateY(-20px)' },
-                        },
-                        'pulse-glow': {
-                            '0%': { boxShadow: '0 0 20px rgba(245, 158, 11, 0.3)' },
-                            '100%': { boxShadow: '0 0 40px rgba(245, 158, 11, 0.6)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     
-    <!-- ICONS -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- STYLES OPTIMIZADOS PROFESIONALES -->
-    <style>
-        :root {
-            --primary-yellow: #F59E0B;
-            --secondary-yellow: #D97706;
-            --dark-bg: #0A0A0A;
-            --card-bg: #111111;
-            --border-color: rgba(245, 158, 11, 0.15);
-        }
-        
-        * {
-            -webkit-tap-highlight-color: transparent;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--dark-bg);
-            color: #fff;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-        }
-        
-        /* BOTONES PROFESIONALES */
-        .btn-primary {
-            background: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%);
-            color: #000;
-            font-weight: 700;
-            border: none;
-            border-radius: 12px;
-            padding: 16px 32px;
-            font-size: 1rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.25);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(245, 158, 11, 0.4);
-        }
-        
-        .btn-primary:active {
-            transform: translateY(-1px);
-        }
-        
-        .btn-primary::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, transparent 0%, rgba(255,255,255,0.1) 50%, transparent 100%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
-        .btn-primary:hover::after {
-            opacity: 1;
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: var(--primary-yellow);
-            font-weight: 700;
-            border: 2px solid var(--primary-yellow);
-            border-radius: 12px;
-            padding: 16px 32px;
-            font-size: 1rem;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(245, 158, 11, 0.1);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(245, 158, 11, 0.1);
-        }
-        
-        /* CARDS PROFESIONALES */
-        .card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
-            padding: 2rem;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(217, 119, 6, 0.02) 100%);
-            opacity: 0;
-            transition: opacity 0.4s;
-            z-index: 1;
-        }
-        
-        .card:hover::before {
-            opacity: 1;
-        }
-        
-        .card:hover {
-            transform: translateY(-8px);
-            border-color: rgba(245, 158, 11, 0.3);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 30px rgba(245, 158, 11, 0.1);
-        }
-        
-        /* NAVEGACIÓN PROFESIONAL */
-        .nav-link {
-            color: #fff;
-            font-weight: 600;
-            padding: 0.75rem 1.25rem;
-            border-radius: 10px;
-            transition: all 0.3s;
-            position: relative;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 3px;
-            background: var(--primary-yellow);
-            transition: all 0.3s;
-            transform: translateX(-50%);
-            border-radius: 3px;
-        }
-        
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 60%;
-        }
-        
-        .nav-link:hover,
-        .nav-link.active {
-            color: var(--primary-yellow);
-            background: rgba(245, 158, 11, 0.05);
-        }
-        
-        /* FORMULARIOS PROFESIONALES */
-        .form-input {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 1rem 1.25rem;
-            color: #fff;
-            font-size: 1rem;
-            transition: all 0.3s;
-            width: 100%;
-        }
-        
-        .form-input:focus {
-            outline: none;
-            border-color: var(--primary-yellow);
-            background: rgba(255, 255, 255, 0.08);
-            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
-        }
-        
-        /* ANIMACIONES PROFESIONALES */
-        .animate-float {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        .animate-pulse-glow {
-            animation: pulse-glow 2s ease-in-out infinite alternate;
-        }
-        
-        /* ESPECIAL PARA MÓVIL - ORIENTACIÓN HORIZONTAL */
-        @media (max-width: 1024px) and (orientation: portrait) {
-            .mobile-horizontal-scroll {
-                display: flex;
-                overflow-x: auto;
-                scroll-snap-type: x mandatory;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-                padding-bottom: 1rem;
-                gap: 1rem;
-            }
-            
-            .mobile-horizontal-scroll::-webkit-scrollbar {
-                display: none;
-            }
-            
-            .mobile-horizontal-item {
-                flex: 0 0 85vw;
-                scroll-snap-align: start;
-                scroll-margin-left: 1rem;
-            }
-            
-            .mobile-grid-2 {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-        }
-        
-        /* DISEÑO RESPONSIVO PROFESIONAL */
-        @media (max-width: 768px) {
-            html {
-                font-size: 14px;
-            }
-            
-            /* HEADER COMPACTO */
-            header {
-                padding: 0.75rem 0;
-            }
-            
-            .logo-container {
-                gap: 0.75rem;
-            }
-            
-            .logo-container h1 {
-                font-size: 1.5rem;
-            }
-            
-            /* NAVEGACIÓN HORIZONTAL PARA MÓVIL */
-            .mobile-nav {
-                display: flex;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                padding: 0.5rem 1rem;
-                gap: 0.5rem;
-                background: rgba(0, 0, 0, 0.95);
-                backdrop-filter: blur(10px);
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-                border-bottom: 1px solid var(--border-color);
-            }
-            
-            .mobile-nav a {
-                flex-shrink: 0;
-                white-space: nowrap;
-                padding: 0.75rem 1.25rem;
-                font-size: 0.9rem;
-            }
-            
-            /* HERO SECTION OPTIMIZADA */
-            .hero-section {
-                padding: 3rem 1rem;
-            }
-            
-            .hero-title {
-                font-size: 2.25rem;
-                line-height: 1.2;
-                margin-bottom: 1.5rem;
-            }
-            
-            .hero-subtitle {
-                font-size: 1.1rem;
-                line-height: 1.6;
-                margin-bottom: 2rem;
-            }
-            
-            .hero-buttons {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                width: 100%;
-            }
-            
-            .hero-buttons button {
-                width: 100%;
-                padding: 1.125rem 1.5rem;
-                font-size: 1rem;
-            }
-            
-            /* GRIDS RESPONSIVAS */
-            .responsive-grid-1 {
-                grid-template-columns: 1fr;
-            }
-            
-            .responsive-grid-2 {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-            
-            /* SECCIONES CON ESPACIADO OPTIMIZADO */
-            .section-padding {
-                padding: 3rem 1rem;
-            }
-            
-            /* TÍTULOS RESPONSIVOS */
-            .section-title {
-                font-size: 2rem;
-                margin-bottom: 2rem;
-                text-align: center;
-            }
-            
-            .card-title {
-                font-size: 1.25rem;
-                margin-bottom: 0.75rem;
-            }
-            
-            /* ESTADÍSTICAS OPTIMIZADAS */
-            .stats-grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-            
-            .stat-item {
-                padding: 1.5rem;
-                text-align: center;
-            }
-            
-            .stat-number {
-                font-size: 2rem;
-                margin-bottom: 0.5rem;
-            }
-            
-            /* BOTONES FLOTANTES OPTIMIZADOS */
-            .floating-btn {
-                padding: 1rem 1.5rem;
-                font-size: 0.9rem;
-                border-radius: 50px;
-                bottom: 1rem;
-                left: 1rem;
-                right: 1rem;
-                width: auto;
-            }
-            
-            /* WHATSAPP BUTTON */
-            .whatsapp-btn {
-                width: 56px;
-                height: 56px;
-                bottom: 1rem;
-                right: 1rem;
-            }
-            
-            /* FORMULARIO OPTIMIZADO */
-            .form-container {
-                padding: 1.5rem;
-            }
-            
-            .form-group {
-                margin-bottom: 1.25rem;
-            }
-            
-            /* FOOTER RESPONSIVO */
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .footer-section {
-                text-align: center;
-            }
-            
-            .social-icons {
-                justify-content: center;
-                gap: 1rem;
-            }
-            
-            /* UTILIDADES DE ESPACIADO */
-            .mobile-mb-4 {
-                margin-bottom: 2rem;
-            }
-            
-            .mobile-mb-6 {
-                margin-bottom: 3rem;
-            }
-            
-            .mobile-px-4 {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-            
-            /* MEJORA DE TEXTO EN MÓVIL */
-            p, li, span, a {
-                font-size: 0.95rem;
-                line-height: 1.6;
-            }
-        }
-        
-        /* TABLET OPTIMIZATIONS */
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .hero-title {
-                font-size: 3rem;
-            }
-            
-            .responsive-grid-3 {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .responsive-grid-4 {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .stats-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-        
-        /* ANIMACIONES DE ENTRADA */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        /* MEJORAS DE PERFORMANCE */
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
     
-    <!-- FAVICON -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/logo-kurtus-yellow.png">
-    
-    <!-- JSON-LD SCHEMA MEJORADO -->
+
+    <!-- JSON-LD Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": ["MusicGroup", "LocalBusiness"],
+        "@type": "MusicGroup",
         "name": "Kurtus Inc",
-        "description": "Productora musical en Barcelona especializada en artistas emergentes",
+        "description": "Productora musical profesional especializada en producción y distribución",
         "url": "https://kurtusinc.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Barcelona",
-            "addressRegion": "Cataluña",
-            "addressCountry": "ES"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "41.3851",
-            "longitude": "2.1734"
-        },
-        "telephone": "+34624170204",
-        "email": "incrifemusic@gmail.com",
-        "priceRange": "€€",
-        "openingHours": "Mo-Fr 09:00-20:00",
         "sameAs": [
             "https://instagram.com/kurtusinc",
-            "https://youtube.com/@kurtusinc",
-            "https://open.spotify.com/incrife",
-            "https://www.tiktok.com/@kurtusin"
-        ],
-        "knowsAbout": [
-            "Producción musical",
-            "Grabación en estudio",
-            "Mezcla y mastering",
-            "Producción de videoclips",
-            "Distribución digital",
-            "Artistas emergentes"
-        ],
-        "serviceType": [
-            "Producción musical",
-            "Grabación profesional",
-            "Mezcla y mastering",
-            "Producción audiovisual",
-            "Distribución digital"
+            "https://youtube.com/@kurtusinc"
         ]
     }
     </script>
 </head>
 
-<body class="font-inter bg-dark-bg text-white">
+<body class="font-montserrat bg-black text-white">
 
-    <!-- HEADER PROFESIONAL -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-yellow-600/10">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
-                <!-- LOGO -->
-                <div class="logo-container flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center shadow-lg animate-pulse-glow">
-                        <i class="fas fa-compact-disc text-black text-xl font-bold"></i>
+    <!-- Header Principal -->
+    <header class="w-full relative bg-black border-b border-yellow-600/20">
+        <!-- Navegación -->
+        <nav class="container mx-auto px-4 py-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-4 mb-6 lg:mb-0">
+                    <div class="logo-yellow w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center">
+                        <i class="fas fa-compact-disc text-black text-2xl font-bold"></i>
                     </div>
-                    <div>
-                        <h1 class="text-2xl font-black tracking-tight">
+                    <div class="logo-text">
+                        <h1 class="text-3xl md:text-4xl font-black">
                             <span class="text-white">KURTUS</span> 
                             <span class="text-yellow-500">INC</span>
                         </h1>
-                        <p class="text-xs text-yellow-400/80 font-semibold tracking-widest">PRODUCTORA MUSICAL</p>
+                        <p class="text-sm text-yellow-400 font-semibold tracking-widest">PRODUCTORA MUSICAL</p>
                     </div>
                 </div>
-                
-                <!-- DESKTOP NAV -->
-                <nav class="hidden md:flex items-center gap-2">
-                    <a href="#inicio" class="nav-link active">INICIO</a>
-                    <a href="#servicios" class="nav-link">SERVICIOS</a>
-                    <a href="#proyectos" class="nav-link">PROYECTOS</a>
-                    <a href="#colaboradores" class="nav-link">COLABORADORES</a>
-                    <a href="#distribucion" class="nav-link">DISTRIBUCIÓN</a>
-                    <a href="#contacto" class="btn-primary ml-4">CONTACTO</a>
-                </nav>
-                
-                <!-- MOBILE MENU BUTTON -->
-                <button id="mobile-menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-gray-900/50 border border-gray-800">
-                    <i class="fas fa-bars text-gray-300"></i>
-                </button>
+<!-- Cámbialo por esto (añadiendo la línea nueva): -->
+<div class="flex flex-wrap justify-center gap-2 lg:gap-6">
+    <a href="#inicio" class="nav-link-yellow active">INICIO</a>
+    <a href="#servicios" class="nav-link-yellow">SERVICIOS</a>
+    <a href="#colaboradores" class="nav-link-yellow">COLABORADORES</a>
+    <a href="#distribucion" class="nav-link-yellow">DISTRIBUCIÓN</a>
+    <!-- LÍNEA NUEVA QUE AÑADES -->
+    <a href="colaborar.html" class="nav-link-yellow">¿BUSCAS TRABAJAR?</a>
+
+</div>
+                </div>
             </div>
-        </div>
-        
-        <!-- MOBILE NAV -->
-        <div class="mobile-nav md:hidden">
-            <a href="#inicio" class="nav-link active">INICIO</a>
-            <a href="#servicios" class="nav-link">SERVICIOS</a>
-            <a href="#proyectos" class="nav-link">PROYECTOS</a>
-            <a href="#colaboradores" class="nav-link">COLABORADORES</a>
-            <a href="#distribucion" class="nav-link">DISTRIBUCIÓN</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <div id="inicio" class="container mx-auto px-4 py-16 lg:py-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Texto Hero -->
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-yellow-500/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-yellow-500/30">
+                        <span class="h-2 w-2 bg-yellow-400 rounded-full animate-pulse"></span>
+                        <span class="text-sm font-semibold text-yellow-400">CAMPAÑA</span>
+                    </div>
+                    
+                    <h2 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight">
+                        PRODUCCIÓN 
+                        <span class="text-yellow-500">MUSICAL</span><br>
+                        DE <span class="text-yellow-400">ALTA GAMA</span>
+                    </h2>
+                    
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        Servicios de producción musical para artistas y
+                        empresas 
+                        
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contacto" class="btn-yellow px-8 py-4 rounded-xl font-bold text-lg">
+                            <i class="fas fa-calendar-check mr-2"></i>SOLICITAR PRESUPUESTO
+                        </a>
+                        <a href="#servicios" class="btn-yellow-outline px-8 py-4 rounded-xl font-bold text-lg">
+                            <i class="fas fa-play-circle mr-2"></i>VER SERVICIOS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Estadísticas -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                        <div class="text-yellow-500 text-3xl mb-4">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">GRABACIÓN</h3>
+                        <p class="text-yellow-300 text-sm">Estudio profesional</p>
+                    </div>
+                    
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                        <div class="text-yellow-500 text-3xl mb-4">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">MEZCLA</h3>
+                        <p class="text-yellow-300 text-sm">Ingenieros</p>
+                    </div>
+                    
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                        <div class="text-yellow-500 text-3xl mb-4">
+                            <i class="fas fa-wave-square"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">MASTERING</h3>
+                        <p class="text-yellow-300 text-sm">Calidad internacional</p>
+                    </div>
+                    
+                    <div class="bg-gray-900 rounded-xl p-6 border border-yellow-600/20">
+                        <div class="text-yellow-500 text-3xl mb-4">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">VIDEOCLIPS</h3>
+                        <p class="text-yellow-300 text-sm">Producción completa</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- HERO SECTION PROFESIONAL -->
-    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-b from-black to-gray-900/50 hero-section">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <!-- CONTENIDO PRINCIPAL -->
-                <div class="fade-in">
-                    <div class="inline-flex items-center gap-2 bg-yellow-500/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-yellow-500/30">
-                        <span class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
-                        <span class="text-sm font-semibold text-yellow-400 tracking-wide">ESPECIALISTAS EN ARTISTAS EMERGENTES</span>
-                    </div>
-                    
-                    <h1 class="hero-title font-black mb-6">
-                        PRODUCCIÓN 
-                        <span class="text-yellow-500">MUSICAL</span><br>
-                        PARA <span class="text-yellow-400">ARTISTAS</span><br>
-                        DE BARCELONA
-                    </h1>
-                    
-                    <p class="hero-subtitle text-gray-300 mb-8">
-                        Transformamos tu talento en éxito profesional. Grabación, mezcla, mastering y distribución global para artistas emergentes. Calidad profesional al alcance de todos.
-                    </p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#contacto" class="btn-primary inline-flex items-center justify-center gap-2">
-                            <i class="fas fa-calendar-check"></i>
-                            SOLICITAR PRESUPUESTO
-                        </a>
-                        <a href="#servicios" class="btn-secondary inline-flex items-center justify-center gap-2">
-                            <i class="fas fa-play-circle"></i>
-                            VER SERVICIOS
-                        </a>
-                    </div>
-                    
-                    <!-- ESTADÍSTICAS -->
-                    <div class="stats-grid mt-12">
-                        <div class="stat-item card">
-                            <div class="stat-number text-yellow-500 font-black">500+</div>
-                            <p class="text-sm text-gray-400">Proyectos Completados</p>
-                        </div>
-                        <div class="stat-item card">
-                            <div class="stat-number text-yellow-500 font-black">100%</div>
-                            <p class="text-sm text-gray-400">Satisfacción Garantizada</p>
-                        </div>
-                    </div>
-                </div>
+  <!-- Sección Servicios -->
+<section id="servicios" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-4xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                SERVICIOS <span class="text-yellow-500">PROFESIONALES</span>
+            </h2>
+            <p class="text-xl text-gray-400 mb-8">
+                Soluciones completas para todas las etapas de producción musical y audiovisual
+            </p>
+        </div>
 
-                <!-- IMAGEN O VISUAL -->
-                <div class="fade-in">
-                    <div class="relative">
-                        <div class="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-transparent rounded-3xl blur-xl"></div>
-                        <div class="relative card p-8 bg-gradient-to-br from-gray-900 to-black">
-                            <div class="aspect-square rounded-2xl bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 border border-yellow-500/20 flex items-center justify-center animate-float">
-                                <div class="text-center p-8">
-                                    <i class="fas fa-music text-6xl text-yellow-500 mb-6"></i>
-                                    <h3 class="text-xl font-bold mb-4">ESTUDIO PROFESIONAL</h3>
-                                    <p class="text-gray-400">Equipamiento de última generación en Barcelona</p>
-                                </div>
-                            </div>
-                            
-                            <!-- PLATAFORMAS -->
-                            <div class="grid grid-cols-3 gap-4 mt-8">
-                                <div class="bg-gray-900/50 rounded-xl p-4 text-center border border-gray-800">
-                                    <i class="fab fa-spotify text-2xl text-green-500 mb-2"></i>
-                                    <p class="text-xs text-gray-400">Spotify</p>
-                                </div>
-                                <div class="bg-gray-900/50 rounded-xl p-4 text-center border border-gray-800">
-                                    <i class="fab fa-apple text-2xl text-gray-300 mb-2"></i>
-                                    <p class="text-xs text-gray-400">Apple Music</p>
-                                </div>
-                                <div class="bg-gray-900/50 rounded-xl p-4 text-center border border-gray-800">
-                                    <i class="fab fa-youtube text-2xl text-red-500 mb-2"></i>
-                                    <p class="text-xs text-gray-400">YouTube</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Grid de Servicios -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- Servicio 1 - GRABACIÓN -->
+            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
+                <div class="text-yellow-500 text-4xl mb-6">
+                    <i class="fas fa-microphone-alt"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-white">GRABACIÓN PROFESIONAL</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Estudios acústicamente tratados con equipamiento de primera línea
+                </p>
+                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Micrófono SE2200a II para captura vocal premium</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Monitores Yamaha HS5 con referencia plana</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Interface Apollo Solo con procesamiento UAD</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Acompañamiento técnico durante toda la sesión</span>
+                    </li>
+                </ul>
+                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
+                    <i class="fas fa-headphones mr-2"></i>Soporte técnico incluido
+                </div>
+            </div>
+
+            <!-- Servicio 2 - EDICIÓN & MEZCLA -->
+            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
+                <div class="text-yellow-500 text-4xl mb-6">
+                    <i class="fas fa-sliders-h"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-white">EDICIÓN & MEZCLA</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Transformamos tus grabaciones en productos listos para plataformas
+                </p>
+                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Edición vocal precisa: timing, afinación, limpieza</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Mezcla profesional con balance y espacio</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Hasta 3 revisiones incluidas en el proceso</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Acompañamiento creativo en cada paso</span>
+                    </li>
+                </ul>
+                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
+                    <i class="fas fa-sync-alt mr-2"></i>Revisiones sin coste adicional
+                </div>
+            </div>
+
+            <!-- Servicio 3 - MASTERING -->
+            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
+                <div class="text-yellow-500 text-4xl mb-6">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-white">MASTERING</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    El toque final que hace que tu música suene en todas partes
+                </p>
+                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Mastering analógico y digital combinado</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Certificación LUFS para niveles óptimos</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Entrega en todos los formatos digitales</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Explicación detallada de cada proceso</span>
+                    </li>
+                </ul>
+                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
+                    <i class="fas fa-volume-up mr-2"></i>Ajustes finales incluidos
+                </div>
+            </div>
+
+            <!-- Servicio 4 - AUDIOVISUAL -->
+            <div class="bg-black rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 h-full flex flex-col">
+                <div class="text-yellow-500 text-4xl mb-6">
+                    <i class="fas fa-film"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-white">PRODUCCIÓN AUDIOVISUAL</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                    Videoclips profesionales que cuentan historias y elevan tu música
+                </p>
+                <ul class="space-y-3 text-gray-300 mb-6 flex-grow">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Cámara Lumix S5 II en cine 6K Full Frame</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Lente 50mm f/1.8 para profundidad cinematográfica</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Color Grading profesional con estilo único</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                        <span>Desarrollo de narrativa visual personalizada</span>
+                    </li>
+                </ul>
+                <div class="text-sm text-yellow-400 font-medium pt-4 border-t border-gray-800">
+                    <i class="fas fa-video mr-2"></i>Entrega en múltiples formatos
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- SERVICIOS PROFESIONALES -->
-    <section id="servicios" class="section-padding bg-black">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12 mobile-mb-6">
-                <h2 class="section-title font-black mb-4">
-                    SERVICIOS <span class="text-yellow-500">PROFESIONALES</span>
-                </h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Soluciones completas para artistas emergentes en Barcelona
+        <!-- Sección de Compromiso y Garantías -->
+        <div class="mt-16 pt-12 border-t border-gray-800">
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Acompañamiento -->
+                <div class="bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 p-8 rounded-2xl border border-yellow-500/20 h-full">
+                    <h3 class="text-2xl font-bold mb-4 text-white">
+                        <i class="fas fa-hands-helping text-yellow-500 mr-3"></i>
+                        TE GUIAMOS PASO A PASO
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Nosotros también empezamos sin saber nada. Entendemos esa sensación de incertidumbre. Por eso te acompañamos en cada etapa.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-lightbulb text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Transformamos tu idea en algo tangible</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-comments text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Comunicación constante durante todo el proceso</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-brain text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Hacemos realidad lo que imaginas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-graduation-cap text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span>Te enseñamos y explicamos cada decisión</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Postventa -->
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 h-full">
+                    <h3 class="text-2xl font-bold mb-4 text-white">
+                        <i class="fas fa-shield-alt text-yellow-500 mr-3"></i>
+                        POSTVENTA GARANTIZADA
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Nuestro compromiso no termina con la entrega. Tu satisfacción es nuestra prioridad.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-redo text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>Revisiones semanalmente</strong></span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-sync text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>Rehacemos todo gratuitamente</strong> si no estás satisfecho</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cloud-upload-alt text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>Soporte técnico</strong> para distribución en plataformas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-database text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>Backup permanente</strong> de todos tus archivos</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Cancelaciones y Garantías -->
+                <div class="bg-gradient-to-br from-red-500/10 to-red-600/5 p-8 rounded-2xl border border-red-500/20 h-full">
+                    <h3 class="text-2xl font-bold mb-4 text-white">
+                        <i class="fas fa-hand-holding-usd text-red-500 mr-3"></i>
+                        GARANTÍA DE SATISFACCIÓN
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Trabajamos con total transparencia. Tu confianza es lo más importante.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-money-bill-wave text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>100% de devolución</strong> en cancelaciones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>Cancelación gratuita</strong> en cualquier momento</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heart text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>Satisfacción garantizada</strong> o te devolvemos el dinero</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-lock text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+                            <span><strong>Transparencia total</strong> en costes y procesos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Mensaje Final -->
+            <div class="mt-8 text-center">
+                <p class="text-gray-300 text-lg italic">
+                    "Empezamos donde tú estás ahora. Te entendemos, te guiamos y hacemos realidad tu visión."
                 </p>
-            </div>
-
-            <!-- SERVICIOS EN HORIZONTAL PARA MÓVIL -->
-            <div class="mobile-horizontal-scroll md:hidden">
-                <div class="mobile-horizontal-item card">
-                    <div class="text-yellow-500 text-4xl mb-6">
-                        <i class="fas fa-microphone-alt"></i>
-                    </div>
-                    <h3 class="card-title font-bold">GRABACIÓN PROFESIONAL</h3>
-                    <p class="text-gray-400 mb-6">
-                        Estudios acústicamente tratados con equipamiento profesional
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Micrófono SE2200a II premium</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Monitores Yamaha HS5</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Interface Apollo Solo UAD</span>
-                        </li>
-                    </ul>
-                    <a href="#contacto" class="btn-secondary w-full text-center">SABER MÁS</a>
-                </div>
-
-                <div class="mobile-horizontal-item card">
-                    <div class="text-yellow-500 text-4xl mb-6">
-                        <i class="fas fa-sliders-h"></i>
-                    </div>
-                    <h3 class="card-title font-bold">MEZCLA & MASTERING</h3>
-                    <p class="text-gray-400 mb-6">
-                        Transformamos tus grabaciones en productos profesionales
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Edición vocal precisa</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Mezcla profesional con balance</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Hasta 3 revisiones incluidas</span>
-                        </li>
-                    </ul>
-                    <a href="#contacto" class="btn-secondary w-full text-center">SABER MÁS</a>
-                </div>
-
-                <div class="mobile-horizontal-item card">
-                    <div class="text-yellow-500 text-4xl mb-6">
-                        <i class="fas fa-film"></i>
-                    </div>
-                    <h3 class="card-title font-bold">VIDEOCLIPS PROFESIONALES</h3>
-                    <p class="text-gray-400 mb-6">
-                        Producción audiovisual que eleva tu música
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Cámara Lumix S5 II 6K</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Lente 50mm f/1.8 cinematográfico</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Color Grading profesional</span>
-                        </li>
-                    </ul>
-                    <a href="#contacto" class="btn-secondary w-full text-center">SABER MÁS</a>
-                </div>
-            </div>
-
-            <!-- SERVICIOS PARA DESKTOP -->
-            <div class="hidden md:grid responsive-grid-3 gap-8">
-                <!-- Servicios desktop -->
-                <div class="card">
-                    <div class="text-yellow-500 text-4xl mb-6">
-                        <i class="fas fa-microphone-alt"></i>
-                    </div>
-                    <h3 class="card-title font-bold">GRABACIÓN PROFESIONAL</h3>
-                    <p class="text-gray-400 mb-6">
-                        Estudios acústicamente tratados con equipamiento profesional
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Micrófono SE2200a II premium</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Monitores Yamaha HS5</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Interface Apollo Solo UAD</span>
-                        </li>
-                    </ul>
-                    <a href="#contacto" class="btn-secondary w-full text-center">SABER MÁS</a>
-                </div>
-
-                <div class="card">
-                    <div class="text-yellow-500 text-4xl mb-6">
-                        <i class="fas fa-sliders-h"></i>
-                    </div>
-                    <h3 class="card-title font-bold">MEZCLA & MASTERING</h3>
-                    <p class="text-gray-400 mb-6">
-                        Transformamos tus grabaciones en productos profesionales
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Edición vocal precisa</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Mezcla profesional con balance</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Hasta 3 revisiones incluidas</span>
-                        </li>
-                    </ul>
-                    <a href="#contacto" class="btn-secondary w-full text-center">SABER MÁS</a>
-                </div>
-
-                <div class="card">
-                    <div class="text-yellow-500 text-4xl mb-6">
-                        <i class="fas fa-film"></i>
-                    </div>
-                    <h3 class="card-title font-bold">VIDEOCLIPS PROFESIONALES</h3>
-                    <p class="text-gray-400 mb-6">
-                        Producción audiovisual que eleva tu música
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Cámara Lumix S5 II 6K</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Lente 50mm f/1.8 cinematográfico</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Color Grading profesional</span>
-                        </li>
-                    </ul>
-                    <a href="#contacto" class="btn-secondary w-full text-center">SABER MÁS</a>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- Sección Proyectos Realizados -->
+<section id="proyectos" class="py-20 bg-black">
+    <div class="container mx-auto px-4 max-w-7xl">
+        
+        <!-- Encabezado -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                <span class="text-yellow-500">PROYECTOS</span> REALIZADOS
+            </h2>
+            <p class="text-xl text-gray-400">
+                Próximamente: muestra de nuestro trabajo en producción musical y videoclips
+            </p>
+        </div>
 
-    <!-- MODELOS DE TRABAJO -->
-    <section class="section-padding bg-gradient-to-b from-black to-gray-900">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12 mobile-mb-6">
-                <h2 class="section-title font-black mb-4">
-                    MODELOS DE <span class="text-yellow-500">TRABAJO</span>
-                </h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Elige la opción que mejor se adapte a tus necesidades
-                </p>
+        <!-- Grid de proyectos - TODOS iguales, placeholder -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Proyecto 1 - Placeholder -->
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
+                <div class="p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-video text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Proyecto en Desarrollo</h3>
+                    <p class="text-gray-400 mb-6">
+                        Próximamente: videoclip profesional
+                    </p>
+                    <div class="text-xs text-gray-500 mb-4">Disponible pronto</div>
+                </div>
             </div>
 
-            <div class="responsive-grid-3 gap-8">
-                <!-- MODELO GRATUITO -->
-                <div class="card text-center">
-                    <div class="mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
-                            <i class="fas fa-gift text-yellow-500 text-2xl"></i>
+            <!-- Proyecto 2 - Placeholder -->
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
+                <div class="p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-music text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Producción Musical</h3>
+                    <p class="text-gray-400 mb-6">
+                        Próximamente: grabación y mezcla
+                    </p>
+                    <div class="text-xs text-gray-500 mb-4"></div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 - Placeholder -->
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
+                <div class="p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-microphone text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Sesión de Estudio</h3>
+                    <p class="text-gray-400 mb-6">
+                        Próximamente: grabación en vivo
+                    </p>
+                    <div class="text-xs text-gray-500 mb-4"></div>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 - Placeholder -->
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
+                <div class="p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-sliders-h text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Mezcla y Master</h3>
+                    <p class="text-gray-400 mb-6">
+                        Próximamente: proceso completo
+                    </p>
+                    <div class="text-xs text-gray-500 mb-4"></div>
+                </div>
+            </div>
+
+            <!-- Proyecto 5 - Placeholder -->
+            <div class="group relative overflow-hidden rounded-2xl border-2 border-dashed border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-500 flex items-center justify-center min-h-[400px]">
+                <div class="p-8 text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-headphones text-yellow-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-white">Sesión Acústica</h3>
+                    <p class="text-gray-400 mb-6">
+                        Próximamente: grabación íntima
+                    </p>
+                    <div class="text-xs text-gray-500 mb-4"></div>
+                </div>
+            </div>
+
+           <!-- Proyecto 6 - Llamada a la acción (MODIFICADO) -->
+<div class="group relative overflow-hidden rounded-2xl border-2 border-yellow-500/50 hover:border-yellow-500 transition-all duration-500 flex items-center justify-center min-h-[400px] bg-gradient-to-br from-yellow-500/5 to-yellow-600/10">
+    <div class="p-8 text-center">
+        <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-500 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+            <i class="fas fa-plus text-white text-xl"></i> <!-- Más pequeño -->
+        </div>
+        <h3 class="text-2xl font-bold mb-4 text-white">Tu Proyecto Aquí</h3>
+        <p class="text-gray-300 mb-6 text-base max-w-xs mx-auto"> <!-- Texto más pequeño -->
+            Sé el primero en mostrar tu trabajo con nosotros
+        </p>
+        <a href="#contacto" 
+           class="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black font-bold px-6 py-3 rounded-lg text-base transition-all duration-300 transform hover:scale-105 shadow-lg"> <!-- Botón más pequeño -->
+            <i class="fas fa-paper-plane"></i>
+            ¡Contáctanos!
+        </a>
+        <div class="mt-4 text-xs text-yellow-400 font-medium"> <!-- Texto más pequeño -->
+            <i class="fas fa-bolt mr-1"></i>
+            Pronto en YouTube
+        </div>
+    </div>
+</div>
+        </div> <!-- Cierre del grid -->
+
+        <!-- Nota informativa -->
+        <div class="text-center mt-12 pt-8 border-t border-gray-800">
+            <p class="text-gray-400 text-sm">
+                <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
+                Estamos trabajando en nuevos proyectos. Esta sección se actualizará próximamente con contenido real.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- NUEVA SECCIÓN: COLABORADORES -->
+<section id="colaboradores" class="py-20 bg-black">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                NUESTROS <span class="text-yellow-500">COLABORADORES</span>
+            </h2>
+            <p class="text-xl text-gray-400">
+                El equipo profesional que hace posible la excelencia en cada proyecto
+            </p>
+        </div>
+
+        <!-- Grid de colaboradores -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Colaborador 1 -->
+<a href="https://instagram.com/incrife" 
+   target="_blank"
+   class="bg-gray-900 rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 hover:scale-[1.02] block">
+    
+    <div class="flex flex-col items-center text-center">
+        <div class="w-24 h-24 bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 rounded-full flex items-center justify-center mb-6 border-2 border-yellow-500/30 overflow-hidden">
+            <img
+  src="./SaveClip.App_575556125_18074872850235869_5803504733093357044_n.jpg"
+  alt="Foto"
+  width="300"
+            />
+        </div>
+        
+        <h3 class="text-2xl font-bold mb-2 text-white">INCRIFE</h3>
+        <p class="text-yellow-400 font-semibold mb-4">CEO</p>
+        <p class="text-gray-300 mb-6">
+            Una persona donde busca dar oportunidad a las personas
+        </p>
+        
+        <div class="flex gap-3 mt-6">
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Productor</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Filmaker</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Ejecutivo</span>
+        </div>
+    </div>
+</a>
+
+<!-- Colaborador 2 -->
+<a href="https://www.instagram.com/rafa930_oficial/" 
+   target="_blank"
+   class="bg-gray-900 rounded-2xl p-8 border border-yellow-600/20 hover:border-yellow-500 transition-all duration-300 hover:scale-[1.02] block">
+    
+    <div class="flex flex-col items-center text-center">
+        <div class="w-24 h-24 bg-gradient-to-br from-yellow-500/30 to-yellow-600/20 rounded-full flex items-center justify-center mb-6 border-2 border-yellow-500/30 overflow-hidden">
+            <img
+  src="./channels4_profile (4).jpg"
+  alt="Foto de perfil"
+  width="300"
+            />
+        </div>
+        
+        <h3 class="text-2xl font-bold mb-2 text-white">Rafa 930</h3>
+        <p class="text-yellow-400 font-semibold mb-4">CEO</p>
+        <p class="text-gray-300 mb-6">
+            Una persona donde busca dar oportunidad a las personas
+        </p>
+        
+        <div class="flex items-center gap-2 text-sm text-purple-400">
+        </div>
+        
+        <div class="flex gap-3 mt-6">
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Productor</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Organizador</span>
+            <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1 rounded">Ejecutivo</span>
+        </div>
+    </div>
+</a>
+</div> <!-- Cierre del grid -->
+</div> <!-- Cierre del container -->
+</section> <!-- Cierre de la sección -->
+
+   <!-- Sección Modelos/Servicios -->
+<section id="modelos" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                 <span class="text-yellow-500">NUESTROS SERVICIOS</span>
+            </h2>
+            <p class="text-xl text-gray-400">
+                Elige el plan que mejor se adapte a tus necesidades
+            </p>
+        </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Modelo Gratuito -->
+                <div class="model-yellow-card bg-black rounded-3xl p-8 border-2 border-yellow-600/30">
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-yellow-500/20 rounded-2xl mb-4 border border-yellow-500/30">
+                            <i class="fas fa-gift text-yellow-400 text-3xl"></i>
                         </div>
-                        <h3 class="text-xl font-black mb-2">MODELO GRATUITO</h3>
-                        <div class="text-3xl font-black text-yellow-500 mb-2">0€</div>
-                        <p class="text-gray-400 text-sm">Sin inversión inicial</p>
+                        <h3 class="text-2xl font-black mb-2 text-white">MODELO GRATUITO</h3>
+                        <div class="text-4xl font-black mb-2 text-yellow-500">0€</div>
+                        <p class="text-gray-400">Sin inversión inicial</p>
                     </div>
                     
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Todos los servicios incluidos</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Distribución global</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Soporte básico</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Todos los servicios de producció musical y visualn</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Distribución global</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Soporte básico</span>
+                        </div>
+                    </div>
                     
-                    <div class="bg-yellow-500/10 rounded-xl p-4 mb-6 border border-yellow-500/20">
-                        <p class="text-yellow-300 text-sm font-medium">
-                            Condición: Proponer una visión clara del proyecto
+                    <div class="bg-yellow-500/10 rounded-xl p-4 mb-8 border border-yellow-500/20">
+                        <h4 class="font-bold text-yellow-400 mb-2">CONDICIÓN PRINCIPAL</h4>
+                        <p class="text-yellow-300 text-sm">
+                            Kurtus Inc retiene el 100% de los derechos de autor
                         </p>
                     </div>
                     
-                    <a href="#contacto" class="btn-primary w-full">SELECCIONAR</a>
+                    <a href="#contacto" class="btn-yellow w-full text-center py-4 rounded-xl font-bold">
+                        <i class="fas fa-file-contract mr-2"></i>SELECCIONAR
+                    </a>
                 </div>
 
-                <!-- MODELO PREMIUM -->
-                <div class="card text-center relative bg-gradient-to-b from-yellow-600/10 to-yellow-500/5">
-                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-black px-4 py-1 rounded-full text-xs font-bold">
+                <!-- Modelo Premium -->
+                <div class="model-yellow-card bg-gradient-to-b from-yellow-600/30 to-yellow-500/10 rounded-3xl p-8 border-2 border-yellow-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-yellow-500 text-black px-4 py-1 rounded-full text-sm font-bold">
                             RECOMENDADO
                         </span>
                     </div>
                     
-                    <div class="mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-crown text-black text-2xl"></i>
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-yellow-500 rounded-2xl mb-4">
+                            <i class="fas fa-crown text-black text-3xl"></i>
                         </div>
-                        <h3 class="text-xl font-black mb-2">MODELO PREMIUM</h3>
-                        <div class="text-3xl font-black text-yellow-400 mb-2">Personalizado</div>
-                        <p class="text-yellow-300 text-sm">Inversión por proyecto</p>
+                        <h3 class="text-2xl font-black mb-2 text-white">MODELO PREMIUM</h3>
+                        <div class="text-4xl font-black mb-2 text-yellow-400">Desde 299€</div>
+                        <p class="text-yellow-300">Inversión por proyecto</p>
                     </div>
                     
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-400 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Producción completa</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-400 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Marketing incluido</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-400 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Soporte prioritario</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-400 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Estrategias personalizadas</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-3"></i>
+                            <span class="text-white">Produccion musical completa</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-3"></i>
+                            <span class="text-white">Marketing incluido</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-3"></i>
+                            <span class="text-white">Soporte prioritario</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-400 mt-1 mr-3"></i>
+                            <span class="text-white">Estrategias personalizadas</span>
+                        </div>
+                    </div>
                     
-                    <div class="bg-yellow-500/20 rounded-xl p-4 mb-6 border border-yellow-400/30">
-                        <p class="text-yellow-200 text-sm font-medium">
-                            Artista retiene 85% de los derechos
+                    <div class="bg-yellow-500/20 rounded-xl p-4 mb-8 border border-yellow-400/30">
+                        <h4 class="font-bold text-yellow-300 mb-2">CONDICIÓN PRINCIPAL</h4>
+                        <p class="text-yellow-200 text-sm">
+                            El artista retiene 85% de los derechos
                         </p>
                     </div>
                     
-                    <a href="#contacto" class="btn-primary w-full bg-gradient-to-r from-yellow-500 to-yellow-600">SELECCIONAR PREMIUM</a>
+                    <a href="#contacto" class="btn-yellow-premium w-full text-center py-4 rounded-xl font-bold">
+                        <i class="fas fa-star mr-2"></i>SELECCIONAR PREMIUM
+                    </a>
                 </div>
 
-                <!-- MODELO EMPRESAS -->
-                <div class="card text-center">
-                    <div class="mb-6">
-                        <div class="w-20 h-20 bg-gray-800 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-gray-700">
-                            <i class="fas fa-building text-gray-400 text-2xl"></i>
+                <!-- Modelo Empresas -->
+                <div class="model-yellow-card bg-black rounded-3xl p-8 border-2 border-gray-700">
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-800 rounded-2xl mb-4 border border-gray-700">
+                            <i class="fas fa-building text-gray-400 text-3xl"></i>
                         </div>
-                        <h3 class="text-xl font-black mb-2">PARA EMPRESAS</h3>
-                        <div class="text-3xl font-black text-gray-400 mb-2">Personalizado</div>
-                        <p class="text-gray-500 text-sm">Sellos y corporaciones</p>
+                        <h3 class="text-2xl font-black mb-2 text-white">PARA EMPRESAS</h3>
+                        <div class="text-4xl font-black mb-2 text-gray-400">Personalizado</div>
+                        <p class="text-gray-500">Sellos y corporaciones</p>
                     </div>
                     
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Producción a gran escala</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>Contratos personalizados</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check text-yellow-500 mt-1 mr-3 flex-shrink-0"></i>
-                            <span>White label services</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Producción a gran escala</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Contratos personalizados</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">White label services</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check text-yellow-500 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Gestión de catálogos</span>
+                        </div>
+                    </div>
                     
-                    <div class="bg-gray-800 rounded-xl p-4 mb-6 border border-gray-700">
-                        <p class="text-gray-300 text-sm font-medium">
+                    <div class="bg-gray-800 rounded-xl p-4 mb-8 border border-gray-700">
+                        <h4 class="font-bold text-gray-300 mb-2">CONDICIÓN PRINCIPAL</h4>
+                        <p class="text-gray-400 text-sm">
                             Negociación personalizada
                         </p>
                     </div>
-                    
-                    <a href="#contacto" class="btn-primary w-full">SOLICITAR INFO</a>
+                     <a href="#contacto" class="btn-yellow-premium w-full text-center py-4 rounded-xl font-bold">
+                        <i class="fas fa-star mr-2"></i>SELECCIONAR
+                    </a>
+                </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROYECTOS RECIENTES -->
-    <section id="proyectos" class="section-padding bg-black">
+    <!-- Sección Distribución -->
+    <section id="distribucion" class="py-20 bg-black">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12 mobile-mb-6">
-                <h2 class="section-title font-black mb-4">
-                    PROYECTOS <span class="text-yellow-500">DESTACADOS</span>
-                </h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Algunos de nuestros trabajos recientes
-                </p>
-            </div>
-
-            <div class="mobile-horizontal-scroll md:grid md:grid-cols-3 gap-8">
-                <!-- PROYECTO 1 -->
-                <div class="mobile-horizontal-item card group">
-                    <div class="aspect-video rounded-xl bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 mb-6 flex items-center justify-center border border-yellow-500/20">
-                        <i class="fas fa-video text-yellow-500 text-4xl"></i>
-                    </div>
-                    <h3 class="card-title font-bold">VIDEOCLIP "URBAN FLOW"</h3>
-                    <p class="text-gray-400 mb-4">
-                        Producción completa de videoclip para artista emergente de Barcelona
-                    </p>
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-sm text-yellow-400 font-medium">Música Urbana</span>
-                        <span class="text-sm text-gray-500">2024</span>
-                    </div>
-                </div>
-
-                <!-- PROYECTO 2 -->
-                <div class="mobile-horizontal-item card group">
-                    <div class="aspect-video rounded-xl bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 mb-6 flex items-center justify-center border border-yellow-500/20">
-                        <i class="fas fa-music text-yellow-500 text-4xl"></i>
-                    </div>
-                    <h3 class="card-title font-bold">PRODUCCIÓN "MIDNIGHT"</h3>
-                    <p class="text-gray-400 mb-4">
-                        Grabación, mezcla y mastering para EP completo de artista independiente
-                    </p>
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-sm text-yellow-400 font-medium">R&B Moderno</span>
-                        <span class="text-sm text-gray-500">2024</span>
-                    </div>
-                </div>
-
-                <!-- PROYECTO 3 -->
-                <div class="mobile-horizontal-item card group">
-                    <div class="aspect-video rounded-xl bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 mb-6 flex items-center justify-center border border-yellow-500/20">
-                        <i class="fas fa-sliders-h text-yellow-500 text-4xl"></i>
-                    </div>
-                    <h3 class="card-title font-bold">MEZCLA "SUMMER VIBES"</h3>
-                    <p class="text-gray-400 mb-4">
-                        Mezcla y mastering profesional para single de verano
-                    </p>
-                    <div class="flex items-center justify-between mt-6">
-                        <span class="text-sm text-yellow-400 font-medium">Pop Latino</span>
-                        <span class="text-sm text-gray-500">2024</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- DISTRIBUCIÓN GLOBAL -->
-    <section id="distribucion" class="section-padding bg-gradient-to-b from-gray-900 to-black">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12 mobile-mb-6">
-                <h2 class="section-title font-black mb-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
                     DISTRIBUCIÓN <span class="text-yellow-500">GLOBAL</span>
                 </h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                <p class="text-xl text-gray-400">
                     Llevamos tu música a todas las plataformas digitales
                 </p>
             </div>
 
-            <div class="responsive-grid-2 md:grid-cols-6 gap-4 mb-12">
-                <!-- PLATAFORMAS -->
-                <div class="card text-center p-6">
-                    <i class="fab fa-spotify text-4xl text-green-500 mb-4"></i>
-                    <p class="font-semibold">Spotify</p>
-                </div>
-                <div class="card text-center p-6">
-                    <i class="fab fa-apple text-4xl text-gray-300 mb-4"></i>
-                    <p class="font-semibold">Apple Music</p>
-                </div>
-                <div class="card text-center p-6">
-                    <i class="fab fa-youtube text-4xl text-red-500 mb-4"></i>
-                    <p class="font-semibold">YouTube</p>
-                </div>
-                <div class="card text-center p-6">
-                    <i class="fab fa-amazon text-4xl text-yellow-500 mb-4"></i>
-                    <p class="font-semibold">Amazon</p>
-                </div>
-                <div class="card text-center p-6">
-                    <i class="fab fa-tiktok text-4xl text-white mb-4"></i>
-                    <p class="font-semibold">TikTok</p>
-                </div>
-                <div class="card text-center p-6">
-                    <i class="fab fa-deezer text-4xl text-purple-500 mb-4"></i>
-                    <p class="font-semibold">Deezer</p>
-                </div>
-            </div>
+           <!-- Logos de Plataformas -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+    
+    <!-- Spotify -->
+    <a href="https://open.spotify.com/incrife" 
+       target="_blank"
+       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
+        <i class="fab fa-spotify text-4xl text-green-500"></i>
+    </a>
+    
+    <!-- Apple Music -->
+    <a href="https://music.apple.com/incrife" 
+       target="_blank"
+       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
+        <i class="fab fa-apple text-4xl text-gray-300"></i>
+    </a>
+    
+    <!-- Amazon Music -->
+    <a href="https://music.amazon.com/" 
+       target="_blank"
+       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
+        <i class="fab fa-amazon text-4xl text-yellow-500"></i>
+    </a>
+    
+    <!-- YouTube Music -->
+    <a href="https://www.youtube.com/@incrifeb" 
+       target="_blank"
+       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
+        <i class="fab fa-youtube text-4xl text-red-500"></i>
+    </a>
+    
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@kurtusin?lang=es-419" 
+       target="_blank"
+       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
+        <i class="fab fa-tiktok text-4xl text-white"></i>
+    </a>
+    
+    <!-- Deezer -->
+    <a href="https://www.deezer.com/" 
+       target="_blank"
+       class="platform-yellow-logo bg-gray-900 rounded-xl p-6 flex items-center justify-center border border-yellow-600/20 hover:border-yellow-500 hover:bg-gray-800 transition-all duration-300">
+        <i class="fab fa-deezer text-4xl text-purple-500"></i>
+    </a>
+    
+</div>
 
-            <!-- ESTADÍSTICAS -->
-            <div class="card bg-gradient-to-r from-yellow-600/20 to-yellow-500/10 border border-yellow-500/30">
-                <div class="grid responsive-grid-4 text-center">
-                    <div>
-                        <div class="text-3xl md:text-4xl font-black text-yellow-400 mb-2">150+</div>
-                        <p class="text-sm text-yellow-300">Plataformas</p>
+            <!-- Estadísticas -->
+            <div class="bg-gradient-to-r from-yellow-600/30 to-yellow-500/20 rounded-3xl p-12 border border-yellow-600/30">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-5xl font-black mb-2 text-yellow-400">100+</div>
+                        <p class="text-yellow-300">Plataformas</p>
                     </div>
-                    <div>
-                        <div class="text-3xl md:text-4xl font-black text-yellow-400 mb-2">200+</div>
-                        <p class="text-sm text-yellow-300">Países</p>
+                    <div class="text-center">
+                        <div class="text-5xl font-black mb-2 text-yellow-400">200+</div>
+                        <p class="text-yellow-300">Países</p>
                     </div>
-                    <div>
-                        <div class="text-3xl md:text-4xl font-black text-yellow-400 mb-2">48h</div>
-                        <p class="text-sm text-yellow-300">Distribución</p>
+                    <div class="text-center">
+                        <div class="text-5xl font-black mb-2 text-yellow-400">48h</div>
+                        <p class="text-yellow-300">Distribución</p>
                     </div>
-                    <div>
-                        <div class="text-3xl md:text-4xl font-black text-yellow-400 mb-2">100%</div>
-                        <p class="text-sm text-yellow-300">Royalties</p>
+                    <div class="text-center">
+                        <div class="text-5xl font-black mb-2 text-yellow-400">100%</div>
+                        <p class="text-yellow-300">Royalties</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACTO PROFESIONAL -->
-    <section id="contacto" class="section-padding bg-black">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-12 mobile-mb-6">
-                <h2 class="section-title font-black mb-4">
-                    CONTACTA CON <span class="text-yellow-500">NOSOTROS</span>
+    <!-- Sección Clientes -->
+    <section id="clientes" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    CLIENTES <span class="text-yellow-500">DESTACADOS</span>
                 </h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Solicita información o presupuesto para tu proyecto
+                <p class="text-xl text-gray-400">
+                    Artistas y sellos que confían en nuestra producción
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- INFORMACIÓN DE CONTACTO -->
-                <div class="card">
-                    <h3 class="text-xl font-bold mb-6">INFORMACIÓN DE CONTACTO</h3>
-                    
-                    <div class="space-y-6 mb-8">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-envelope text-yellow-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Email</h4>
-                                <p class="text-gray-400">incrifemusic@gmail.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-phone text-yellow-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Teléfono</h4>
-                                <p class="text-gray-400">+34 624 17 02 04</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-map-marker-alt text-yellow-500"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold mb-1">Ubicación</h4>
-                                <p class="text-gray-400">Barcelona, España</p>
-                            </div>
-                        </div>
+            <!-- Grid de Clientes -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
+                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-microphone text-yellow-400 text-2xl"></i>
                     </div>
-                    
-                    <!-- HORARIOS -->
-                    <div class="bg-gray-900/50 rounded-xl p-4 border border-gray-800">
-                        <h4 class="font-semibold mb-2">Horario de atención</h4>
-                        <p class="text-gray-400 text-sm">Lunes a Viernes: 9:00 - 20:00</p>
-                        <p class="text-gray-400 text-sm">Sábados: 10:00 - 14:00</p>
-                    </div>
+                    <h4 class="font-bold text-lg mb-2 text-white">RAFA 930</h4>
+                    <p class="text-yellow-400 text-sm mb-4">Artista Urbano</p>
+                    <div class="text-yellow-500 font-semibold"></div>
                 </div>
 
-                <!-- FORMULARIO -->
-                <div class="card">
-                    <h3 class="text-xl font-bold mb-6">ENVÍA TU PROYECTO</h3>
-                    
-                    <form action="https://formspree.io/f/mvzgdnay" method="POST" class="space-y-6">
-                        <div class="form-group">
-                            <label class="block text-white mb-2">Nombre Completo *</label>
-                            <input type="text" name="nombre" required class="form-input">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="block text-white mb-2">Email *</label>
-                            <input type="email" name="email" required class="form-input">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="block text-white mb-2">Tipo de Proyecto</label>
-                            <select name="proyecto" class="form-input">
-                                <option value="">Seleccionar...</option>
-                                <option value="grabacion">Grabación en Estudio</option>
-                                <option value="mezcla">Mezcla & Mastering</option>
-                                <option value="videoclip">Videoclip</option>
-                                <option value="distribucion">Distribución</option>
-                                <option value="completo">Proyecto Completo</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="block text-white mb-2">Mensaje *</label>
-                            <textarea name="mensaje" rows="4" required class="form-input" placeholder="Describe tu proyecto..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn-primary w-full">
-                            <i class="fas fa-paper-plane mr-2"></i>ENVIAR SOLICITUD
-                        </button>
-                    </form>
+                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
+                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-compact-disc text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2 text-white">URBAN BEATS</h4>
+                    <p class="text-yellow-400 text-sm mb-4">Sello Discográfico</p>
+                    <div class="text-yellow-500 font-semibold"></div>
+                </div>
+
+                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
+                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-guitar text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2 text-white">CARLOS MÉNDEZ</h4>
+                    <p class="text-yellow-400 text-sm mb-4">Artista Rock</p>
+                    <div class="text-yellow-500 font-semibold"></div>
+                </div>
+
+                <div class="client-yellow-card bg-black rounded-2xl p-8 text-center border border-yellow-600/20">
+                    <div class="client-avatar-yellow w-20 h-20 bg-yellow-500/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-yellow-500/30">
+                        <i class="fas fa-building text-yellow-400 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-lg mb-2 text-white">MUSIC CORP</h4>
+                    <p class="text-yellow-400 text-sm mb-4">Empresa Audiovisual</p>
+                    <div class="text-yellow-500 font-semibold"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER PROFESIONAL -->
-    <footer class="bg-black border-t border-gray-900 py-12">
+    <!-- Sección Contacto -->
+<section id="contacto" class="py-20 bg-black">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <h2 class="text-4xl font-bold text-center mb-4 text-white">CONTACTO</h2>
+        <p class="text-xl text-gray-400 text-center mb-8">
+            Solicita información o presupuesto para tu proyecto
+        </p>
+
+        <!-- FORMULARIO MODIFICADO -->
+        <form action="https://formspree.io/f/mvzgdnay" 
+              method="POST"
+              class="bg-gray-900 rounded-2xl shadow-xl p-8 border border-yellow-600/20">
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-white mb-2">Nombre Completo *</label>
+                    <input type="text" 
+                           name="nombre"
+                           required 
+                           class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+                </div>
+                <div>
+                    <label class="block text-white mb-2">Email *</label>
+                    <input type="email" 
+                           name="email"
+                           required 
+                           class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-white mb-2">Tipo de Cliente *</label>
+                <select name="tipo_cliente"
+                        required 
+                        class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20">
+                    <option value="">Seleccionar...</option>
+                    <option value="artist">Artista Independiente</option>
+                    <option value="band">Banda/Grupo</option>
+                    <option value="label">Sello Discográfico</option>
+                    <option value="company">Empresa/Corporación</option>
+                </select>
+            </div>
+            
+            <div class="mb-4">
+                <label class="block text-white mb-2">Modelo de Interés</label>
+                <div class="grid grid-cols-3 gap-2">
+                    <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700">
+                        <input type="radio" name="modelo" value="gratuito" class="mr-3">
+                        <span class="text-sm text-gray-300">Gratuito</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700">
+                        <input type="radio" name="modelo" value="premium" class="mr-3">
+                        <span class="text-sm text-gray-300">Premium</span>
+                    </label>
+                    <label class="flex items-center p-3 rounded-lg bg-gray-800 border border-gray-700 cursor-pointer hover:bg-gray-700">
+                        <input type="radio" name="modelo" value="empresas" class="mr-3">
+                        <span class="text-sm text-gray-300">Empresas</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="mb-6">
+                <label class="block text-white mb-2">Mensaje *</label>
+                <textarea name="mensaje"
+                          required 
+                          rows="4" 
+                          class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20" 
+                          placeholder="Describe tu proyecto..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-yellow w-full py-4 rounded-xl font-bold text-lg">
+                <i class="fas fa-paper-plane mr-2"></i>ENVIAR SOLICITUD
+            </button>
+        </form>
+    </div>
+    <!-- Botón flotante simple que aparece/desaparece -->
+<a href="colaborar.html" 
+   id="collaborate-btn"
+   class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-40 flex items-center gap-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold px-6 py-3 rounded-xl shadow-lg transition-all duration-500 opacity-0 -translate-y-5">
+    <i class="fas fa-briefcase"></i>
+    <span>¿BUSCAS TRABAJAR CON NOSOTROS?</span>
+    <i class="fas fa-arrow-right ml-2"></i>
+</a>
+
+<script>
+// Aparece/desaparece cíclicamente
+let isVisible = false;
+let cycleInterval;
+
+function showButton() {
+    const btn = document.getElementById('collaborate-btn');
+    btn.classList.remove('opacity-0', '-translate-y-5');
+    btn.classList.add('opacity-100', 'translate-y-0');
+    isVisible = true;
+}
+
+function hideButton() {
+    const btn = document.getElementById('collaborate-btn');
+    btn.classList.remove('opacity-100', 'translate-y-0');
+    btn.classList.add('opacity-0', '-translate-y-5');
+    isVisible = false;
+}
+
+// Ciclo: 5 segundos visible, 10 segundos oculto
+function startCycle() {
+    // Primera aparición después de 8 segundos
+    setTimeout(() => {
+        showButton();
+        
+        // Ciclo continuo
+        cycleInterval = setInterval(() => {
+            if (isVisible) {
+                // Está visible → ocultar después de 5 segundos
+                setTimeout(() => {
+                    hideButton();
+                }, 5000);
+            } else {
+                // Está oculto → mostrar después de 10 segundos
+                setTimeout(() => {
+                    showButton();
+                }, 10000);
+            }
+        }, 15000); // Ciclo total: 15 segundos
+    }, 8000); // Primera aparición a los 8 segundos
+}
+
+// Iniciar cuando la página cargue
+document.addEventListener('DOMContentLoaded', startCycle);
+
+// Mostrar siempre al hacer hover (opcional)
+document.getElementById('collaborate-btn').addEventListener('mouseenter', () => {
+    clearInterval(cycleInterval);
+    showButton();
+});
+
+// Reanudar ciclo al salir del hover
+document.getElementById('collaborate-btn').addEventListener('mouseleave', () => {
+    setTimeout(() => {
+        startCycle();
+    }, 2000); // Espera 2 segundos antes de reanudar
+});
+</script>
+</section>
+    <footer class="bg-gray-900 py-12 border-t border-yellow-600/20">
         <div class="container mx-auto px-4">
-            <div class="grid footer-grid md:grid-cols-4 gap-8 mb-8">
-                <!-- LOGO Y DESCRIPCIÓN -->
-                <div class="footer-section">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Columna 1 -->
+                <div>
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center">
-                            <i class="fas fa-compact-disc text-black text-xl"></i>
+                        <div class="logo-yellow w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-compact-disc text-black"></i>
                         </div>
                         <h3 class="text-2xl font-black">
-                            <span>KURTUS</span>
+                            <span class="text-white">KURTUS</span> 
                             <span class="text-yellow-500">INC</span>
                         </h3>
                     </div>
                     <p class="text-gray-400 mb-6">
-                        Productora musical profesional especializada en artistas emergentes de Barcelona.
+                        Productora musical profesional especializada en producción y distribución.
                     </p>
-                    <div class="social-icons flex gap-4">
-                        <a href="#" class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-yellow-500/20 hover:text-yellow-500 transition-all">
+                    <div class="flex gap-4">
+                        <a href="#" class="social-yellow">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-yellow-500/20 hover:text-yellow-500 transition-all">
+                        <a href="#" class="social-yellow">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-yellow-500/20 hover:text-yellow-500 transition-all">
+                        <a href="#" class="social-yellow">
                             <i class="fab fa-spotify"></i>
+                        </a>
+                        <a href="#" class="social-yellow">
+                            <i class="fab fa-tiktok"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- ENLACES RÁPIDOS -->
-                <div class="footer-section">
-                    <h4 class="text-lg font-bold mb-6">ENLACES RÁPIDOS</h4>
+                <!-- Columna 2 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">SERVICIOS</h4>
                     <ul class="space-y-3">
-                        <li><a href="#inicio" class="text-gray-400 hover:text-yellow-400 transition">Inicio</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Servicios</a></li>
-                        <li><a href="#proyectos" class="text-gray-400 hover:text-yellow-400 transition">Proyectos</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Grabación</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Mezcla & Mastering</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Producción Audiovisual</a></li>
                         <li><a href="#distribucion" class="text-gray-400 hover:text-yellow-400 transition">Distribución</a></li>
                     </ul>
                 </div>
 
-                <!-- SERVICIOS -->
-                <div class="footer-section">
-                    <h4 class="text-lg font-bold mb-6">SERVICIOS</h4>
+                <!-- Columna 3 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">MODELOS</h4>
                     <ul class="space-y-3">
-                        <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Grabación Profesional</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Mezcla & Mastering</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-yellow-400 transition">Videoclips</a></li>
-                        <li><a href="#distribucion" class="text-gray-400 hover:text-yellow-400 transition">Distribución Digital</a></li>
+                        <li><a href="#modelos" class="text-gray-400 hover:text-yellow-400 transition">Modelo Gratuito</a></li>
+                        <li><a href="#modelos" class="text-gray-400 hover:text-yellow-400 transition">Modelo Premium</a></li>
+                        <li><a href="#modelos" class="text-gray-400 hover:text-yellow-400 transition">Para Empresas</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-yellow-400 transition">Solicitar Presupuesto</a></li>
                     </ul>
                 </div>
 
-                <!-- CONTACTO FOOTER -->
-                <div class="footer-section">
-                    <h4 class="text-lg font-bold mb-6">CONTACTO</h4>
+                <!-- Columna 4 -->
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">CONTACTO</h4>
                     <ul class="space-y-3 text-gray-400">
                         <li class="flex items-center gap-3">
                             <i class="fas fa-envelope text-yellow-500"></i>
@@ -1277,189 +1096,472 @@
                             <i class="fas fa-map-marker-alt text-yellow-500"></i>
                             Barcelona, España
                         </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-clock text-yellow-500"></i>
+                            Lun-Vie: 9:00-20:00
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- COPYRIGHT -->
-            <div class="border-t border-gray-900 pt-8 text-center">
-                <p class="text-gray-500 text-sm">
-                    &copy; 2024 KURTUS INC. Todos los derechos reservados.
-                </p>
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+                <p>&copy; 2026 KURTUSINC. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <!-- BOTÓN WHATSAPP FLOTANTE -->
+<div class="fixed bottom-6 right-6 flex flex-col items-end gap-3 z-50">
+    
+<!-- Botón WhatsApp con mensaje flotante -->
+<div class="fixed bottom-6 right-6 flex flex-col items-end z-50">
+    
+    <!-- Mensaje que aparece -->
+    <div id="whatsapp-message" class="mb-3 bg-gray-900 text-white text-sm py-2 px-4 rounded-lg shadow-xl border border-yellow-500/30 opacity-0 transform translate-x-10 transition-all duration-500">
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span>¿Necesitas ayuda? Escríbenos</span>
+        </div>
+        <div class="absolute -bottom-1 right-4 w-3 h-3 bg-gray-900 transform rotate-45 border-r border-b border-yellow-500/30"></div>
+    </div>
+    
+    <!-- Botón WhatsApp -->
     <a href="https://wa.me/34624170204" 
        target="_blank" 
-       class="fixed bottom-6 right-6 whatsapp-btn bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all transform hover:scale-105 z-50">
+       class="bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all transform hover:scale-105">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
+    
+</div>
 
-    <!-- BOTÓN FLOTANTE "BUSCAS TRABAJAR" -->
-    <a href="colaborar.html" 
-       class="fixed bottom-24 md:bottom-6 left-4 right-4 md:left-auto md:right-24 floating-btn bg-gradient-to-r from-yellow-500 to-yellow-600 text-black font-bold rounded-full flex items-center justify-center gap-2 shadow-2xl hover:shadow-yellow-500/30 transition-all z-50">
-        <i class="fas fa-briefcase"></i>
-        <span>¿BUSCAS TRABAJAR CON NOSOTROS?</span>
-    </a>
+<script>
+// Aparece el mensaje después de 3 segundos
+setTimeout(function() {
+    const message = document.getElementById('whatsapp-message');
+    message.classList.remove('opacity-0', 'translate-x-10');
+    message.classList.add('opacity-100', 'translate-x-0');
+}, 3000);
 
-    <!-- SCRIPT DE ANIMACIONES Y FUNCIONALIDAD -->
-    <script>
-        // ANIMACIONES DE ENTRADA
-        document.addEventListener('DOMContentLoaded', function() {
-            const fadeElements = document.querySelectorAll('.fade-in');
+// Desaparece después de 10 segundos
+setTimeout(function() {
+    const message = document.getElementById('whatsapp-message');
+    message.classList.remove('opacity-100', 'translate-x-0');
+    message.classList.add('opacity-0', 'translate-x-10');
+}, 13000);
+
+// Aparece cada 60 segundos (1 minuto)
+setInterval(function() {
+    const message = document.getElementById('whatsapp-message');
+    
+    // Solo aparece si no está visible ya
+    if (message.classList.contains('opacity-0')) {
+        message.classList.remove('opacity-0', 'translate-x-10');
+        message.classList.add('opacity-100', 'translate-x-0');
+        
+        // Desaparece después de 7 segundos
+        setTimeout(function() {
+            message.classList.remove('opacity-100', 'translate-x-0');
+            message.classList.add('opacity-0', 'translate-x-10');
+        }, 7000);
+    }
+}, 60000); // 60000 ms = 1 minuto
+</script>
+</div>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+<!-- FAQ Assistant - Estilo profesional minimalista -->
+<div id="faq-assistant" class="fixed bottom-6 left-6 z-40 hidden md:block">
+    
+    <!-- Botón principal de activación -->
+    <button id="assistant-toggle-btn" 
+            class="flex items-center gap-3 bg-gradient-to-r from-gray-800 to-gray-900 text-white px-4 py-3 rounded-xl shadow-2xl hover:shadow-lg hover:shadow-yellow-500/20 border border-gray-700 hover:border-yellow-500/50 transition-all duration-300 group">
+        <div class="relative">
+            <div class="w-8 h-8 bg-gradient-to-r from-yellow-600 to-yellow-700 rounded-lg flex items-center justify-center">
+                <i class="fas fa-question text-white text-sm"></i>
+            </div>
+            <div class="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+        </div>
+        <div class="text-left">
+            <div class="text-sm font-semibold text-white">Preguntas Frecuentes</div>
+            <div class="text-xs text-gray-400">Respuestas rápidas</div>
+        </div>
+        <i class="fas fa-chevron-down text-gray-500 ml-2 group-hover:text-yellow-500 transition-transform duration-300" id="toggle-icon"></i>
+    </button>
+    
+    <!-- Panel de FAQ (oculto inicialmente) -->
+    <div id="faq-panel" 
+         class="absolute bottom-16 left-0 w-72 bg-gray-900 rounded-xl border border-gray-800 shadow-2xl overflow-hidden opacity-0 transform scale-95 -translate-y-5 transition-all duration-300 pointer-events-none">
+        
+        <!-- Cabecera -->
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 p-4 border-b border-gray-800">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-white font-bold text-sm">FAQ PROFESSIONAL</h3>
+                    <p class="text-gray-400 text-xs">Selecciona una categoría</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <span class="text-green-500 text-xs font-medium">En línea</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contenido - Acordeón -->
+        <div class="max-h-80 overflow-y-auto">
             
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
+            <!-- Precios -->
+            <div class="faq-category border-b border-gray-800">
+                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-yellow-600/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tag text-yellow-500 text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white text-sm font-medium">Precios y Tarifas</div>
+                            <div class="text-gray-400 text-xs">Costes de servicios</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-4 pb-3">
+                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-white text-sm">Videoclip profesional</span>
+                            <span class="text-yellow-500 font-bold">200€</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-white text-sm">Grabación en estudio</span>
+                            <span class="text-yellow-500 font-bold">30€</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-white text-sm">Mezcla y Master</span>
+                            <span class="text-yellow-500 font-bold">30€</span>
+                        </div>
+                        <div class="pt-2 border-t border-gray-700">
+                            <span class="text-green-400 text-sm font-medium">Servicio gratuito disponible</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            fadeElements.forEach(el => observer.observe(el));
+            <!-- Derechos -->
+            <div class="faq-category border-b border-gray-800">
+                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-balance-scale text-blue-400 text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white text-sm font-medium">Derechos y Porcentajes</div>
+                            <div class="text-gray-400 text-xs">Propiedad intelectual</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-4 pb-3">
+                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-3">
+                        <div>
+                            <div class="text-green-400 text-sm font-medium mb-1">Modalidad Gratuita</div>
+                            <div class="text-white text-xs">• Cubrimos todos los costes<br>• Artista conserva 100% derechos</div>
+                        </div>
+                        <div>
+                            <div class="text-blue-400 text-sm font-medium mb-1">Modalidad de Pago</div>
+                            <div class="text-white text-xs">• Cliente paga el servicio<br>• Artista recibe 90% derechos<br>• Nosotros 10%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            // MENÚ MÓVIL
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileNav = document.querySelector('.mobile-nav');
+            <!-- Distribución -->
+            <div class="faq-category border-b border-gray-800">
+                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-purple-600/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-globe text-purple-400 text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white text-sm font-medium">Distribución</div>
+                            <div class="text-gray-400 text-xs">Plataformas digitales</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-4 pb-3">
+                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-2">
+                        <div class="text-white text-sm">• Distribuimos a nuestro nombre</div>
+                        <div class="text-white text-sm">• Todas las plataformas principales</div>
+                        <div class="text-white text-sm">• Creamos canales para el artista</div>
+                        <div class="text-gray-400 text-xs mt-2">* Se discute personalmente según proyecto</div>
+                    </div>
+                </div>
+            </div>
             
-            if (mobileMenuBtn) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    mobileNav.classList.toggle('hidden');
-                    mobileNav.classList.toggle('flex');
-                });
-            }
+            <!-- Métodos de Pago -->
+            <div class="faq-category border-b border-gray-800">
+                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-green-600/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-credit-card text-green-400 text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white text-sm font-medium">Métodos de Pago</div>
+                            <div class="text-gray-400 text-xs">Formas de pago aceptadas</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-4 pb-3">
+                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-2">
+                        <div class="flex items-center gap-2">
+                            <div class="w-6 h-6 bg-blue-500/20 rounded flex items-center justify-center">
+                                <i class="fab fa-paypal text-blue-400 text-xs"></i>
+                            </div>
+                            <span class="text-white text-sm">PayPal</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-6 h-6 bg-green-500/20 rounded flex items-center justify-center">
+                                <i class="fas fa-university text-green-400 text-xs"></i>
+                            </div>
+                            <span class="text-white text-sm">Transferencia bancaria</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-6 h-6 bg-red-500/20 rounded flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-red-400 text-xs"></i>
+                            </div>
+                            <span class="text-white text-sm">Bizum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-            // NAVEGACIÓN SUAVE
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                        // Cerrar menú móvil si está abierto
-                        if (window.innerWidth < 768) {
-                            mobileNav.classList.add('hidden');
-                            mobileNav.classList.remove('flex');
-                        }
-                    }
-                });
-            });
+            <!-- Ubicación -->
+            <div class="faq-category border-b border-gray-800">
+                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-red-600/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-red-400 text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white text-sm font-medium">Ubicación</div>
+                            <div class="text-gray-400 text-xs">Estudio y trabajo remoto</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-4 pb-3">
+                    <div class="bg-gray-800/30 rounded-lg p-3">
+                        <div class="text-white text-sm font-medium mb-2">Estudio principal:</div>
+                        <div class="text-white text-sm">Barcelona, España</div>
+                        <div class="text-gray-400 text-xs mt-3">También trabajamos de forma remota con artistas de cualquier ubicación.</div>
+                    </div>
+                </div>
+            </div>
             
-            // ACTIVAR NAV LINK ACTUAL
-            function updateActiveNav() {
-                const sections = document.querySelectorAll('section[id]');
-                const navLinks = document.querySelectorAll('.nav-link');
-                
-                let currentSection = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 100;
-                    const sectionHeight = section.clientHeight;
-                    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                        currentSection = section.getAttribute('id');
-                    }
-                });
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${currentSection}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
+            <!-- Tiempos -->
+            <div class="faq-category border-b border-gray-800">
+                <button class="faq-category-btn w-full flex items-center justify-between p-3 hover:bg-gray-800/50 transition-colors">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-cyan-600/20 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-clock text-cyan-400 text-sm"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-white text-sm font-medium">Tiempos de Entrega</div>
+                            <div class="text-gray-400 text-xs">Estimaciones por servicio</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-500 text-xs transition-transform"></i>
+                </button>
+                <div class="faq-content hidden px-4 pb-3">
+                    <div class="bg-gray-800/30 rounded-lg p-3 space-y-3">
+                        <div>
+                            <div class="text-white text-sm font-medium">Videoclip:</div>
+                            <div class="text-gray-400 text-xs">• Grabación: 1 día<br>• Edición: 3 días máximo</div>
+                        </div>
+                        <div>
+                            <div class="text-white text-sm font-medium">Sesión de estudio:</div>
+                            <div class="text-gray-400 text-xs">• Duración: 1-2 horas</div>
+                        </div>
+                        <div>
+                            <div class="text-white text-sm font-medium">Mezcla y Master:</div>
+                            <div class="text-gray-400 text-xs">• Entrega: 2 días</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </a>
+            </div>
             
-            window.addEventListener('scroll', updateActiveNav);
-            updateActiveNav();
-            
-            // MEJORA DE FORMULARIO
-            const form = document.querySelector('form');
-            if (form) {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    // Simulación de envío
-                    const submitBtn = form.querySelector('button[type="submit"]');
-                    const originalText = submitBtn.innerHTML;
-                    
-                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>ENVIANDO...';
-                    submitBtn.disabled = true;
-                    
-                    // Simular envío
-                    setTimeout(() => {
-                        submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>ENVIADO CON ÉXITO';
-                        submitBtn.style.background = '#10B981';
-                        
-                        setTimeout(() => {
-                            submitBtn.innerHTML = originalText;
-                            submitBtn.disabled = false;
-                            form.reset();
-                        }, 2000);
-                    }, 1500);
-                });
+        </div>
+    </div>
+</div>
+
+<script>
+// Elementos principales
+const toggleBtn = document.getElementById('assistant-toggle-btn');
+const toggleIcon = document.getElementById('toggle-icon');
+const faqPanel = document.getElementById('faq-panel');
+const categoryBtns = document.querySelectorAll('.faq-category-btn');
+
+// Estado
+let panelOpen = false;
+
+// Abrir/cerrar panel
+toggleBtn.addEventListener('click', () => {
+    if (!panelOpen) {
+        // Abrir panel
+        faqPanel.style.opacity = '1';
+        faqPanel.style.transform = 'scale(1) translateY(0)';
+        faqPanel.style.pointerEvents = 'auto';
+        toggleIcon.style.transform = 'rotate(180deg)';
+        panelOpen = true;
+    } else {
+        // Cerrar panel
+        faqPanel.style.opacity = '0';
+        faqPanel.style.transform = 'scale(0.95) translateY(-5px)';
+        faqPanel.style.pointerEvents = 'none';
+        toggleIcon.style.transform = 'rotate(0deg)';
+        
+        // Cerrar todas las categorías abiertas
+        document.querySelectorAll('.faq-content').forEach(content => {
+            content.classList.add('hidden');
+            const icon = content.previousElementSibling.querySelector('.fa-chevron-right');
+            if (icon) {
+                icon.style.transform = 'rotate(0deg)';
             }
         });
         
-        // ANIMACIÓN DE PARTICULAS (OPCIONAL)
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.innerWidth > 768) {
-                const canvas = document.createElement('canvas');
-                canvas.style.position = 'fixed';
-                canvas.style.top = '0';
-                canvas.style.left = '0';
-                canvas.style.width = '100%';
-                canvas.style.height = '100%';
-                canvas.style.pointerEvents = 'none';
-                canvas.style.zIndex = '-1';
-                document.body.appendChild(canvas);
-                
-                const ctx = canvas.getContext('2d');
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                
-                const particles = [];
-                const particleCount = 30;
-                
-                for (let i = 0; i < particleCount; i++) {
-                    particles.push({
-                        x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                        size: Math.random() * 2 + 0.5,
-                        speed: Math.random() * 0.5 + 0.2,
-                        color: `rgba(245, 158, 11, ${Math.random() * 0.1 + 0.05})`
-                    });
+        panelOpen = false;
+    }
+});
+
+// Acordeón para categorías
+categoryBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation(); // Evitar que se cierre el panel
+        
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.fa-chevron-right');
+        
+        if (content.classList.contains('hidden')) {
+            // Cerrar otras categorías
+            document.querySelectorAll('.faq-content').forEach(otherContent => {
+                if (otherContent !== content) {
+                    otherContent.classList.add('hidden');
+                    const otherIcon = otherContent.previousElementSibling.querySelector('.fa-chevron-right');
+                    if (otherIcon) {
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
                 }
-                
-                function animate() {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    
-                    particles.forEach(particle => {
-                        particle.y -= particle.speed;
-                        if (particle.y < 0) {
-                            particle.y = canvas.height;
-                            particle.x = Math.random() * canvas.width;
-                        }
-                        
-                        ctx.beginPath();
-                        ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                        ctx.fillStyle = particle.color;
-                        ctx.fill();
-                    });
-                    
-                    requestAnimationFrame(animate);
-                }
-                
-                animate();
-                
-                window.addEventListener('resize', function() {
-                    canvas.width = window.innerWidth;
-                    canvas.height = window.innerHeight;
-                });
+            });
+            
+            // Abrir esta categoría
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(90deg)';
+            
+            // Scroll a la categoría si no está completamente visible
+            content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+            // Cerrar esta categoría
+            content.classList.add('hidden');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    });
+});
+
+// Cerrar panel al hacer clic fuera
+document.addEventListener('click', (e) => {
+    if (panelOpen && 
+        !faqPanel.contains(e.target) && 
+        !toggleBtn.contains(e.target)) {
+        
+        faqPanel.style.opacity = '0';
+        faqPanel.style.transform = 'scale(0.95) translateY(-5px)';
+        faqPanel.style.pointerEvents = 'none';
+        toggleIcon.style.transform = 'rotate(0deg)';
+        
+        // Cerrar categorías
+        document.querySelectorAll('.faq-content').forEach(content => {
+            content.classList.add('hidden');
+            const icon = content.previousElementSibling.querySelector('.fa-chevron-right');
+            if (icon) {
+                icon.style.transform = 'rotate(0deg)';
             }
         });
-    </script>
+        
+        panelOpen = false;
+    }
+});
 
-</body>
-</html>
+// Efecto hover en el botón principal
+toggleBtn.addEventListener('mouseenter', () => {
+    if (!panelOpen) {
+        toggleBtn.style.transform = 'translateY(-2px)';
+    }
+});
+
+toggleBtn.addEventListener('mouseleave', () => {
+    if (!panelOpen) {
+        toggleBtn.style.transform = 'translateY(0)';
+    }
+});
+</script>
+
+<style>
+/* Animaciones y estilos */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Transiciones suaves */
+#faq-assistant * {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scrollbar personalizado */
+#faq-panel .max-h-80::-webkit-scrollbar {
+    width: 4px;
+}
+
+#faq-panel .max-h-80::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#faq-panel .max-h-80::-webkit-scrollbar-thumb {
+    background: rgba(234, 179, 8, 0.3);
+    border-radius: 2px;
+}
+
+#faq-panel .max-h-80::-webkit-scrollbar-thumb:hover {
+    background: rgba(234, 179, 8, 0.5);
+}
+
+/* Efectos de profundidad */
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.hover\:shadow-lg:hover {
+    box-shadow: 0 10px 25px rgba(234, 179, 8, 0.1);
+}
+
+/* Acordeón suave */
+.faq-content {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    #faq-assistant {
+        display: none;
+    }
+}
+</style>
+<a href="test.html">PRUEBA</a>
